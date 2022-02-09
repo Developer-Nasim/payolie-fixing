@@ -1,0 +1,194 @@
+@import '../includes/_imports.css';
+
+/* Artist Ad Portal Section */
+.artist-ad-portal {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.artist-ad-portal .logo {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    display: block;
+    width: 52px;
+}
+
+.artist-ad-portal .logo img {
+    width: 100%;
+}
+
+.artist-ad-portal .container {
+    display: flex;
+    justify-content: center;
+}
+
+.artist-ad-portal .container form {
+    width: fit-content;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 259px auto;
+    grid-gap: 50px;
+}
+
+.artist-ad-portal .container form .box-left {
+    width: 100%;
+}
+
+.artist-ad-portal .container form .box-left img {
+    width: 100%;
+    height: 259px;
+    object-fit: cover;
+    border: 1px solid #B8B8B8;
+    border-radius: 50%;
+}
+
+.artist-ad-portal .container form .box-right .title svg.mobile-v {
+    display: none;
+}
+
+.artist-ad-portal .container form .box-right p {
+    font-size: 21px;
+    color: #341B36;
+    margin-bottom: 26px;
+}
+
+.artist-ad-portal .container form .box-right .input-group {
+    width: 100%;
+}
+
+.artist-ad-portal .container form .box-right .input-group label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 390px;
+    height: 51px;
+    border: 1px solid #F79AFF;
+    background: #F79AFF;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #ffffff;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.artist-ad-portal .container form .box-right .input-group label:hover {
+    background: transparent;
+    color: #F79AFF;
+}
+
+.artist-ad-portal .skip-btn {
+    position: absolute;
+    bottom: 115px;
+    right: 110px;
+    width: 175px;
+    height: 68px;
+    border: 2px solid #F04CFF;
+    background: #F04CFF;
+    border-radius: 100px;
+    font-size: 22px;
+    color: #F04CFF;
+    color: #fff;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+}
+
+.artist-ad-portal .skip-btn:hover {
+    background: transparent;
+    color: #F04CFF;
+}
+
+.artist-ad-portal .skip-btn i {
+    font-size: 18px;
+    margin-left: 5px;
+}
+
+/* Responsive */
+@media only screen and (max-width: 1300px) {
+    .artist-ad-portal .logo {
+        top: 25px;
+        left: 15px;
+        width: 40px;
+    }
+    
+    .artist-ad-portal .skip-btn {
+        bottom: 50px;
+        right: 50px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .artist-ad-portal {
+        flex-direction: column;
+    }
+
+    .artist-ad-portal .container form {
+        grid-template-columns: 1fr;
+    }
+
+    .artist-ad-portal .container form .box-left {
+        display: flex;
+        justify-content: center;
+    }
+
+    .artist-ad-portal .container form .box-left img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .artist-ad-portal .container form .box-right .input-group label {
+        width: 100%;
+    }
+
+    .artist-ad-portal .skip-btn {
+        height: 52px;
+        position: static;
+        margin-left: auto;
+        margin-right: 4%;
+        margin-bottom: 50px;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    .artist-ad-portal .container {
+        margin: 70px auto;
+    }
+
+    .artist-ad-portal .container form {
+        width: 100%;
+    }
+
+    .artist-ad-portal .container form .box-right .title {
+        margin-bottom: 10px;
+    }
+
+    .artist-ad-portal .container form .box-right .title svg.desktop-v {
+        width: 100%;
+    }
+
+    .artist-ad-portal .container form .box-right p {
+        font-size: 17.6px;
+    }
+
+    .artist-ad-portal .skip-btn {
+        height: 42px;
+        font-size: 18px;
+    }
+
+    .artist-ad-portal .skip-btn i {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .artist-ad-portal .container form {
+        grid-gap: 20px;
+    }
+
+    .artist-ad-portal .container form .box-right p {
+        margin-bottom: 20px;
+    }
+}

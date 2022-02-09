@@ -1,0 +1,240 @@
+@import '../includes/_imports.css';
+
+/* Directory Section */
+.directory {
+    width: 100%;
+    height: 45px;
+    background: #FFF0F8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.directory .container {
+    overflow-x: scroll;
+}
+
+.directory .container::-webkit-scrollbar {
+    display: none;
+}
+
+.directory .container .directory-wrapper {
+    width: auto;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+}
+
+.directory .container .directory-wrapper a {
+    font-size: 16px;
+    color: #EF3DFF;
+    transition: all 0.3s ease;
+}
+
+.directory .container .directory-wrapper a:hover {
+    opacity: 0.6;
+}
+
+.directory .container .directory-wrapper i {
+    margin: 0px 20px;
+    font-size: 14px;
+    color: #E266ED;
+}
+
+/* Help Categories Section */
+.help-categories {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.help-categories .container {
+    padding: 100px 0px;
+    display: grid;
+    grid-template-columns: 480px auto;
+    border-bottom: 1px solid rgba(73, 33, 76, 0.1);
+    position: relative;
+}
+
+.help-categories .container .help-categories-left {
+    width: 100%;
+    padding-right: 50px;
+    border-right: 1px solid rgba(73, 33, 76, 0.1);
+}
+
+.help-categories .container .help-categories-left .help-categories-wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+}
+
+.help-categories .container .help-categories-left .help-categories-wrapper .help-category {
+    width: 100%;
+}
+
+.help-categories .container .help-categories-left .help-categories-wrapper .help-category .help-category-top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.help-categories .container .help-categories-left .help-categories-wrapper .help-category .help-category-top h3 {
+    font-size: 22px;
+    font-weight: 500;
+    color: #091E42;
+}
+
+.help-categories .container .help-categories-left .help-categories-wrapper .help-category .help-category-top i {
+    color: #091E42;
+    transition: all 0.3s ease;
+}
+
+.help-categories .container .help-categories-left .help-categories-wrapper .help-category.active .help-category-top i {
+    transform: rotate(180deg);
+}
+
+.help-categories .container .help-categories-left .help-categories-wrapper .help-category .help-category-bottom {
+    margin-top: 30px;
+    padding-left: 30px;
+    display: none;
+}
+
+.help-categories .container .help-categories-left .help-categories-wrapper .help-category.active .help-category-bottom {
+    display: block;
+}
+
+.help-categories .container .help-categories-left .help-categories-wrapper .help-category .help-category-bottom .help-category-points {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+}
+
+.help-categories .container .help-categories-left .help-categories-wrapper .help-category .help-category-bottom .help-category-points .help-category-point {
+    width: 100%;
+}
+
+.help-categories .container .help-categories-left .help-categories-wrapper .help-category .help-category-bottom .help-category-points .help-category-point .help-category-point-top {
+    width: 100%;
+}
+
+.help-categories .container .help-categories-left .help-categories-wrapper .help-category .help-category-bottom .help-category-points .help-category-point .help-category-point-top button {
+    font-size: 20px;
+    color: #505F79;
+    transition: all 0.3s ease;
+}
+
+.help-categories .container .help-categories-left .help-categories-wrapper .help-category .help-category-bottom .help-category-points .help-category-point .help-category-point-top button:hover {
+    color: #344563;
+}
+
+.help-categories .container .help-categories-left .help-categories-wrapper .help-category .help-category-bottom .help-category-points .help-category-point.active .help-category-point-top button {
+    padding: 15px 25px;
+    background: #F4F5F7;
+    border-radius: 5px;
+    color: #344563;
+}
+
+.help-categories .container .help-categories-left .help-categories-wrapper .help-category .help-category-bottom .help-category-points .help-category-point .help-category-point-bottom {
+    width: calc(100% - 530px);
+    position: absolute;
+    top: 100px;
+    left: 530px;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.help-categories .container .help-categories-left .help-categories-wrapper .help-category .help-category-bottom .help-category-points .help-category-point.active .help-category-point-bottom {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.help-categories .container .help-categories-left .help-categories-wrapper .help-category .help-category-bottom .help-category-points .help-category-point .help-category-point-bottom h2 {
+    font-size: 33px;
+    font-weight: 700;
+    color: #091E42;
+    margin-bottom: 40px;
+}
+
+.help-categories .container .help-categories-left .help-categories-wrapper .help-category .help-category-bottom .help-category-points .help-category-point .help-category-point-bottom .text-point {
+    margin-bottom: 30px;
+}
+
+.help-categories .container .help-categories-left .help-categories-wrapper .help-category .help-category-bottom .help-category-points .help-category-point .help-category-point-bottom .text-point:last-child {
+    margin-bottom: 0px;
+}
+
+.help-categories .container .help-categories-left .help-categories-wrapper .help-category .help-category-bottom .help-category-points .help-category-point .help-category-point-bottom .text-point h4 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #253858;
+    margin-bottom: 10px;
+}
+
+.help-categories .container .help-categories-left .help-categories-wrapper .help-category .help-category-bottom .help-category-points .help-category-point .help-category-point-bottom .text-point p {
+    font-size: 20px;
+    color: #505F79;
+    margin-bottom: 15px;
+}
+
+.help-categories .container .help-categories-left .help-categories-wrapper .help-category .help-category-bottom .help-category-points .help-category-point .help-category-point-bottom .text-point p:last-child {
+    margin-bottom: 0px;
+}
+
+/* Responsive */
+@media only screen and (max-width: 1024px) {
+    .help-categories .container {
+        grid-template-columns: 1fr;
+    }
+
+    .help-categories .container .help-categories-left {
+        padding-right: 0px;
+        border-right: none;
+    }
+
+    .help-categories .container .help-categories-left .help-categories-wrapper .help-category .help-category-top h3 {
+        font-size: 20px;
+    }
+
+    .help-categories .container .help-categories-left .help-categories-wrapper .help-category .help-category-bottom {
+        padding-left: 0px;
+    }
+
+    .help-categories .container .help-categories-left .help-categories-wrapper .help-category .help-category-bottom .help-category-points .help-category-point .help-category-point-bottom {
+        margin-top: 30px;
+        position: static;
+        width: 100%;
+        opacity: 1;
+        pointer-events: all;
+        display: none;
+        padding-bottom: 30px;
+        border-bottom: 1px solid rgba(73, 33, 76, 0.1);
+    }
+
+    .help-categories .container .help-categories-left .help-categories-wrapper .help-category .help-category-bottom .help-category-points .help-category-point.active .help-category-point-bottom {
+        display: block;
+    }
+
+    .help-categories .container .help-categories-left .help-categories-wrapper .help-category .help-category-bottom .help-category-points .help-category-point .help-category-point-bottom h2 {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+
+    .help-categories .container .help-categories-left .help-categories-wrapper .help-category .help-category-bottom .help-category-points .help-category-point .help-category-point-bottom .text-point h4 {
+        font-size: 20px;
+    }
+
+    .help-categories .container .help-categories-left .help-categories-wrapper .help-category .help-category-bottom .help-category-points .help-category-point .help-category-point-bottom .text-point p {
+        font-size: 17px;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    .help-categories .container {
+        padding: 50px 0px;
+    }
+}

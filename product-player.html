@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Important SEO Meta Tags -->
+    <meta property="og:site_name" content="#" />
+	<meta property="og:url" content="#">
+    <meta name="title" content="#">
+    <meta property="og:title" content="#">
+    <meta name="description" content="#">
+	<meta property="og:description" content="#">
+
+    <!-- Icons -->
+    <link rel="shortcut icon" href="./assets/images/brand/icon-primary.svg" type="image/svg">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Fontawesome -->
+    <link href="https://kit-pro.fontawesome.com/releases/v5.15.1/css/pro.min.css" rel="stylesheet">
+
+    <!-- Css Main Files -->
+    <link rel="stylesheet" href="./assets/css/pages/product-player.css">
+    
+    <title>Product Player - Payolie</title>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navigation-bar-v3">
+        <div class="container">
+            <div class="navigation-bar-left">
+                <a href="./" class="logo">
+                    <img src="./assets/images/brand/logo-primary.svg" alt="">
+                </a>
+            </div>
+
+            <form action="">
+                <div class="select">
+                    <select required>
+                        <option value="All">All</option>
+                    </select>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+
+                <input type="text" placeholder="Search" required>
+
+                <button>
+                    <i class="far fa-search"></i>
+                </button>
+            </form>
+
+            <div class="navigation-bar-right">
+                <div class="cart">
+                    <button class="cart-btn">
+                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.58301 17.5C5.39134 17.5 4.42717 18.475 4.42717 19.6666C4.42717 20.8583 5.39134 21.8333 6.58301 21.8333C7.77467 21.8333 8.74967 20.8583 8.74967 19.6666C8.74967 18.475 7.77467 17.5 6.58301 17.5ZM0.0830078 1.24996C0.0830078 1.84579 0.570508 2.33329 1.16634 2.33329H2.24967L6.14967 10.5558L4.68717 13.1991C3.89634 14.6508 4.93634 16.4166 6.58301 16.4166H18.4997C19.0955 16.4166 19.583 15.9291 19.583 15.3333C19.583 14.7375 19.0955 14.25 18.4997 14.25H6.58301L7.77468 12.0833H15.8455C16.658 12.0833 17.373 11.6391 17.7413 10.9675L21.6197 3.93663C22.0205 3.22163 21.5005 2.33329 20.6772 2.33329H4.64384L3.91801 0.784126C3.74467 0.404959 3.35467 0.166626 2.94301 0.166626H1.16634C0.570508 0.166626 0.0830078 0.654126 0.0830078 1.24996V1.24996ZM17.4163 17.5C16.2247 17.5 15.2605 18.475 15.2605 19.6666C15.2605 20.8583 16.2247 21.8333 17.4163 21.8333C18.608 21.8333 19.583 20.8583 19.583 19.6666C19.583 18.475 18.608 17.5 17.4163 17.5Z" fill="#49214D"/>
+                        </svg>
+                    </button>
+
+                    <div class="cart-quantity">
+                        <p>6</p>
+                    </div>
+                </div>
+
+                <div class="notification">
+                    <span class="active"></span>
+                    <svg width="18" height="22" viewBox="0 0 18 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.99993 21.8334C10.1916 21.8334 11.1666 20.8584 11.1666 19.6667H6.83327C6.83327 20.8584 7.79743 21.8334 8.99993 21.8334ZM15.4999 15.3334V9.91671C15.4999 6.59087 13.7233 3.80671 10.6249 3.07004V2.33337C10.6249 1.43421 9.8991 0.708374 8.99993 0.708374C8.10077 0.708374 7.37493 1.43421 7.37493 2.33337V3.07004C4.26577 3.80671 2.49993 6.58004 2.49993 9.91671V15.3334L1.10243 16.7309C0.419934 17.4134 0.8966 18.5834 1.86077 18.5834H16.1283C17.0924 18.5834 17.5799 17.4134 16.8974 16.7309L15.4999 15.3334Z" fill="#49214D"/>
+                    </svg>                        
+                </div>
+
+                <div class="user">
+                    <img src="./assets/images/users/1.png" alt="">
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Directory Section -->
+    <section class="directory">
+        <div class="container">
+            <div class="directory-wrapper">
+                <a href="">Home</a>
+                <i class="far fa-chevron-right"></i>
+                <a href="">About</a>
+                <i class="far fa-chevron-right"></i>
+                <a href="">Artist-Commerce Ads</a>
+                <i class="far fa-chevron-right"></i>
+                <a href="">Shop</a>
+                <i class="far fa-chevron-right"></i>
+                <a href="">Help</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Section -->
+    <section class="product">
+        <div class="container">
+            <div class="product-top">
+                <div class="product-images">
+                    <div class="product-image">
+                        <img src="./assets/images/pages/product/product-img-1.png" alt="">
+                        <button class="player-open-trigger">
+                            <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M80 40C80 17.9086 62.0914 0 40 0C17.9086 0 0 17.9086 0 40C0 62.0914 17.9086 80 40 80C62.0914 80 80 62.0914 80 40Z" fill="white"/>
+                                <path d="M27.4099 23.6185V57.1384C27.4099 59.6945 29.9826 61.2475 31.9639 59.8562L56.0349 43.0963C57.8683 41.8344 57.8683 38.9225 56.0349 37.6283L31.9639 20.9007C29.9826 19.5094 27.4099 21.0625 27.4099 23.6185Z" fill="#F79AFF"/>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="product-bottom-images">
+                        <div class="product-bottom-image active" data-img-src="./assets/images/pages/product/product-img-1.png">
+                            <img src="./assets/images/pages/product/product-img-2.png" alt="">
+                        </div>
+
+                        <div class="product-bottom-image" data-img-src="./assets/images/pages/product/product-img-3.png">
+                            <img src="./assets/images/pages/product/product-img-3.png" alt="">
+                        </div>
+
+                        <div class="product-bottom-image" data-img-src="./assets/images/pages/product/product-img-4.png">
+                            <img src="./assets/images/pages/product/product-img-4.png" alt="">
+                        </div>
+
+                        <div class="product-bottom-image" data-img-src="./assets/images/pages/product/product-img-5.png">
+                            <img src="./assets/images/pages/product/product-img-5.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-info">
+                    <h1>Microsoft Office Word</h1>
+                    <h3>$11.99</h3>
+
+                    <div class="rating">
+                        <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.5 11.2369L12.135 13.9818L10.905 8.80851L15 5.32779L9.6075 4.87154L7.5 0L5.3925 4.87154L0 5.32779L4.0875 8.80851L2.865 13.9818L7.5 11.2369Z" fill="#FB8200"/>
+                        </svg>
+
+                        <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.5 11.2369L12.135 13.9818L10.905 8.80851L15 5.32779L9.6075 4.87154L7.5 0L5.3925 4.87154L0 5.32779L4.0875 8.80851L2.865 13.9818L7.5 11.2369Z" fill="#FB8200"/>
+                        </svg>
+
+                        <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.5 11.2369L12.135 13.9818L10.905 8.80851L15 5.32779L9.6075 4.87154L7.5 0L5.3925 4.87154L0 5.32779L4.0875 8.80851L2.865 13.9818L7.5 11.2369Z" fill="#FB8200"/>
+                        </svg>
+
+                        <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.5 11.2369L12.135 13.9818L10.905 8.80851L15 5.32779L9.6075 4.87154L7.5 0L5.3925 4.87154L0 5.32779L4.0875 8.80851L2.865 13.9818L7.5 11.2369Z" fill="#FB8200"/>
+                        </svg>
+
+                        <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.5 9.85958V3.01674L8.7825 5.98197L12.0675 6.25421L9.5775 8.38064L10.32 11.5298L7.5 9.85958ZM15 5.32712L9.6075 4.87828L7.5 0L5.3925 4.87828L0 5.32712L4.0875 8.8074L2.865 13.98L7.5 11.2355L12.135 13.98L10.905 8.8074L15 5.32712Z" fill="#FB8200"/>
+                        </svg>
+
+                        <span>45 Ratings</span>
+                    </div>
+
+                    <p>&bull; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis enim libero maximus pulvinar quam in, ornare tempus risus.</p>
+                    <p>&bull; Nunc facilisis accumsan diam quis imperdiet. Aenean ultrices aliquet placerat. Aliquam semper ligula diam.</p>
+                    <p>&bull; Sed blandit tincidunt ornare. Sed lectus justo, faucibus ornare nulla non semper faucibus quam diam quis imperdiet.</p>
+
+                    <div class="tags">
+                        <h5>Tags:</h5>
+
+                        <div class="tags-wrapper">
+                            <span>lorem ipsum</span>
+                            <span>lorem</span>
+                            <span>lorem ipsum</span>
+                            <span>lorem</span>
+                        </div>
+                    </div>
+
+                    <div class="btns">
+                        <button class="buy-now-btn">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.75 12.5C3.925 12.5 3.2575 13.175 3.2575 14C3.2575 14.825 3.925 15.5 4.75 15.5C5.575 15.5 6.25 14.825 6.25 14C6.25 13.175 5.575 12.5 4.75 12.5ZM0.25 1.25C0.25 1.6625 0.5875 2 1 2H1.75L4.45 7.6925L3.4375 9.5225C2.89 10.5275 3.61 11.75 4.75 11.75H13C13.4125 11.75 13.75 11.4125 13.75 11C13.75 10.5875 13.4125 10.25 13 10.25H4.75L5.575 8.75H11.1625C11.725 8.75 12.22 8.4425 12.475 7.9775L15.16 3.11C15.4375 2.615 15.0775 2 14.5075 2H3.4075L2.905 0.9275C2.785 0.665 2.515 0.5 2.23 0.5H1C0.5875 0.5 0.25 0.8375 0.25 1.25ZM12.25 12.5C11.425 12.5 10.7575 13.175 10.7575 14C10.7575 14.825 11.425 15.5 12.25 15.5C13.075 15.5 13.75 14.825 13.75 14C13.75 13.175 13.075 12.5 12.25 12.5Z" fill="white"></path>
+                            </svg>
+                            Buy Now
+                        </button>
+
+                        <button class="add-to-cart-btn">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5.25 12.5C4.425 12.5 3.7575 13.175 3.7575 14C3.7575 14.825 4.425 15.5 5.25 15.5C6.075 15.5 6.75 14.825 6.75 14C6.75 13.175 6.075 12.5 5.25 12.5ZM0.75 1.25C0.75 1.6625 1.0875 2 1.5 2H2.25L4.95 7.6925L3.9375 9.5225C3.39 10.5275 4.11 11.75 5.25 11.75H13.5C13.9125 11.75 14.25 11.4125 14.25 11C14.25 10.5875 13.9125 10.25 13.5 10.25H5.25L6.075 8.75H11.6625C12.225 8.75 12.72 8.4425 12.975 7.9775L15.66 3.11C15.9375 2.615 15.5775 2 15.0075 2H3.9075L3.405 0.9275C3.285 0.665 3.015 0.5 2.73 0.5H1.5C1.0875 0.5 0.75 0.8375 0.75 1.25ZM12.75 12.5C11.925 12.5 11.2575 13.175 11.2575 14C11.2575 14.825 11.925 15.5 12.75 15.5C13.575 15.5 14.25 14.825 14.25 14C14.25 13.175 13.575 12.5 12.75 12.5Z" fill="#E266ED"/>
+                            </svg>
+                            Add to cart
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <di class="product-bottom">
+                <a href="" target="_BLANK" class="ad">
+                    <img src="./assets/images/pages/product/product-img-6.png" alt="">
+                </a>
+
+                <div class="reviews">
+                    <div class="review">
+                        <div class="review-top">
+                            <img src="./assets/images/pages/product/product-img-7.png" alt="">
+                            <p>Username</p>
+
+                            <div class="rating">
+                                <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.5 11.2369L12.135 13.9818L10.905 8.80851L15 5.32779L9.6075 4.87154L7.5 0L5.3925 4.87154L0 5.32779L4.0875 8.80851L2.865 13.9818L7.5 11.2369Z" fill="#FB8200"/>
+                                </svg>
+        
+                                <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.5 11.2369L12.135 13.9818L10.905 8.80851L15 5.32779L9.6075 4.87154L7.5 0L5.3925 4.87154L0 5.32779L4.0875 8.80851L2.865 13.9818L7.5 11.2369Z" fill="#FB8200"/>
+                                </svg>
+        
+                                <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.5 11.2369L12.135 13.9818L10.905 8.80851L15 5.32779L9.6075 4.87154L7.5 0L5.3925 4.87154L0 5.32779L4.0875 8.80851L2.865 13.9818L7.5 11.2369Z" fill="#FB8200"/>
+                                </svg>
+        
+                                <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.5 11.2369L12.135 13.9818L10.905 8.80851L15 5.32779L9.6075 4.87154L7.5 0L5.3925 4.87154L0 5.32779L4.0875 8.80851L2.865 13.9818L7.5 11.2369Z" fill="#FB8200"/>
+                                </svg>
+        
+                                <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.5 9.85958V3.01674L8.7825 5.98197L12.0675 6.25421L9.5775 8.38064L10.32 11.5298L7.5 9.85958ZM15 5.32712L9.6075 4.87828L7.5 0L5.3925 4.87828L0 5.32712L4.0875 8.8074L2.865 13.98L7.5 11.2355L12.135 13.98L10.905 8.8074L15 5.32712Z" fill="#FB8200"/>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="review-center">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis enim libero, maximus pulvinar quam in, ornare tempus risus. Nunc facilisis accumsan diam quis imperdiet. Aenean ultrices aliquet placerat. Aliquam semper ligula diam, sit amet laoreet neque imperdiet quis. Aenean ultrices aliquet placerat. Aliquam semper ligula diam</p>
+                            <img src="./assets/images/pages/product/product-img-8.png" alt="">
+                        </div>
+
+                        <div class="review-bottom">
+                            <p>2 days ago</p>
+                        </div>
+                    </div>
+
+                    <div class="review">
+                        <div class="review-top">
+                            <img src="./assets/images/pages/product/product-img-7.png" alt="">
+                            <p>Username</p>
+
+                            <div class="rating">
+                                <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.5 11.2369L12.135 13.9818L10.905 8.80851L15 5.32779L9.6075 4.87154L7.5 0L5.3925 4.87154L0 5.32779L4.0875 8.80851L2.865 13.9818L7.5 11.2369Z" fill="#FB8200"/>
+                                </svg>
+        
+                                <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.5 11.2369L12.135 13.9818L10.905 8.80851L15 5.32779L9.6075 4.87154L7.5 0L5.3925 4.87154L0 5.32779L4.0875 8.80851L2.865 13.9818L7.5 11.2369Z" fill="#FB8200"/>
+                                </svg>
+        
+                                <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.5 11.2369L12.135 13.9818L10.905 8.80851L15 5.32779L9.6075 4.87154L7.5 0L5.3925 4.87154L0 5.32779L4.0875 8.80851L2.865 13.9818L7.5 11.2369Z" fill="#FB8200"/>
+                                </svg>
+        
+                                <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.5 11.2369L12.135 13.9818L10.905 8.80851L15 5.32779L9.6075 4.87154L7.5 0L5.3925 4.87154L0 5.32779L4.0875 8.80851L2.865 13.9818L7.5 11.2369Z" fill="#FB8200"/>
+                                </svg>
+        
+                                <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.5 9.85958V3.01674L8.7825 5.98197L12.0675 6.25421L9.5775 8.38064L10.32 11.5298L7.5 9.85958ZM15 5.32712L9.6075 4.87828L7.5 0L5.3925 4.87828L0 5.32712L4.0875 8.8074L2.865 13.98L7.5 11.2355L12.135 13.98L10.905 8.8074L15 5.32712Z" fill="#FB8200"/>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="review-center">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis enim libero, maximus pulvinar quam in, ornare tempus risus. Nunc facilisis accumsan diam quis imperdiet. Aenean ultrices aliquet placerat. Aliquam semper ligula diam, sit amet laoreet neque imperdiet quis. Aenean ultrices aliquet placerat. Aliquam semper ligula diam</p>
+                            <img src="./assets/images/pages/product/product-img-8.png" alt="">
+                        </div>
+
+                        <div class="review-bottom">
+                            <p>2 days ago</p>
+                        </div>
+                    </div>
+
+                    <div class="review">
+                        <div class="review-top">
+                            <img src="./assets/images/pages/product/product-img-7.png" alt="">
+                            <p>Username</p>
+
+                            <div class="rating">
+                                <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.5 11.2369L12.135 13.9818L10.905 8.80851L15 5.32779L9.6075 4.87154L7.5 0L5.3925 4.87154L0 5.32779L4.0875 8.80851L2.865 13.9818L7.5 11.2369Z" fill="#FB8200"/>
+                                </svg>
+        
+                                <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.5 11.2369L12.135 13.9818L10.905 8.80851L15 5.32779L9.6075 4.87154L7.5 0L5.3925 4.87154L0 5.32779L4.0875 8.80851L2.865 13.9818L7.5 11.2369Z" fill="#FB8200"/>
+                                </svg>
+        
+                                <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.5 11.2369L12.135 13.9818L10.905 8.80851L15 5.32779L9.6075 4.87154L7.5 0L5.3925 4.87154L0 5.32779L4.0875 8.80851L2.865 13.9818L7.5 11.2369Z" fill="#FB8200"/>
+                                </svg>
+        
+                                <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.5 11.2369L12.135 13.9818L10.905 8.80851L15 5.32779L9.6075 4.87154L7.5 0L5.3925 4.87154L0 5.32779L4.0875 8.80851L2.865 13.9818L7.5 11.2369Z" fill="#FB8200"/>
+                                </svg>
+        
+                                <svg width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.5 9.85958V3.01674L8.7825 5.98197L12.0675 6.25421L9.5775 8.38064L10.32 11.5298L7.5 9.85958ZM15 5.32712L9.6075 4.87828L7.5 0L5.3925 4.87828L0 5.32712L4.0875 8.8074L2.865 13.98L7.5 11.2355L12.135 13.98L10.905 8.8074L15 5.32712Z" fill="#FB8200"/>
+                                </svg>
+                            </div>
+                        </div>
+
+                        <div class="review-center">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis enim libero, maximus pulvinar quam in, ornare tempus risus. Nunc facilisis accumsan diam quis imperdiet. Aenean ultrices aliquet placerat. Aliquam semper ligula diam, sit amet laoreet neque imperdiet quis. Aenean ultrices aliquet placerat. Aliquam semper ligula diam</p>
+                            <img src="./assets/images/pages/product/product-img-8.png" alt="">
+                        </div>
+
+                        <div class="review-bottom">
+                            <p>2 days ago</p>
+                        </div>
+                    </div>
+                </div>
+            </di>
+        </div>
+    </section>
+
+    <!-- Player -->
+    <section class="player active">
+        <div class="box">
+            <div class="box-top">
+                <div class="box-top-part-1">
+                    <button class="player-close-trigger">
+                        <svg class="desktop-v" width="27" height="19" viewBox="0 0 27 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22.9997 4.68589L13.5384 15.9149L4.25448 4.48009" stroke="white" stroke-width="5" stroke-linecap="square" stroke-linejoin="round"/>
+                        </svg>
+
+                        <svg class="mobile-v" width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3 18L18 3" stroke="white" stroke-width="5" stroke-linecap="round"/>
+                            <path d="M18 18L3 3" stroke="white" stroke-width="5" stroke-linecap="round"/>
+                        </svg>
+                    </button>
+
+                    <img src="./assets/images/pages/music-player/music-player-img-2.png" alt="">
+                    <div class="box-top-part-1-content">
+                        <h1>Champion <!-- <span>AD</span> --></h1>
+                        <p>Kanye West</p>
+                    </div>
+                </div>
+
+                <div class="box-top-part-2">
+                    <div class="desktop-v">
+                        <div class="controls">
+                            <button class="prev-btn">
+                                <svg width="26" height="30" viewBox="0 0 26 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.9665 16.2325C12.7599 16.0632 12.6362 15.787 12.6347 15.4916V14.7385C12.6362 14.4431 12.7599 14.1669 12.9665 13.9976L20.6086 7.71796C20.8605 7.52468 21.1862 7.52468 21.4381 7.71796L21.5625 7.79084C21.7983 7.95869 21.9433 8.25721 21.9462 8.58035V21.7105C21.9453 22.0343 21.7997 22.3339 21.5625 22.5L21.4381 22.5729C21.1862 22.7662 20.8605 22.7662 20.6086 22.5729L12.9665 16.2325ZM2.59744 16.2325L10.2395 22.5243C10.4914 22.7176 10.8171 22.7176 11.069 22.5243L11.1934 22.4514C11.4307 22.2853 11.5762 21.9857 11.5771 21.6619V8.53176C11.5742 8.20862 11.4292 7.91011 11.1934 7.74225L11.069 7.66937C10.8171 7.47609 10.4914 7.47609 10.2395 7.66937L2.59744 13.9976C2.39083 14.1669 2.26714 14.4431 2.26562 14.7385V15.4916C2.26714 15.787 2.39083 16.0632 2.59744 16.2325Z" fill="white"/>
+                                </svg>                                    
+                            </button>
+    
+                            <button class="play-pause-btn">
+                                <svg width="67" height="68" viewBox="0 0 67 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <ellipse cx="33.415" cy="33.8237" rx="33.3315" ry="33.4873" fill="white"/>
+                                    <path d="M29.1971 23.7078V42.6994C29.1874 43.4445 28.5885 44.0462 27.8468 44.056H25.1464C24.4047 44.0462 23.8058 43.4445 23.7961 42.6994V23.7078C23.8058 22.9627 24.4047 22.361 25.1464 22.3513H27.8468C28.5885 22.361 29.1874 22.9627 29.1971 23.7078ZM40.449 22.3513H37.7486C37.0069 22.361 36.408 22.9627 36.3983 23.7078V42.6994C36.408 43.4445 37.0069 44.0462 37.7486 44.056H40.449C41.1907 44.0462 41.7896 43.4445 41.7993 42.6994V23.7078C41.7896 22.9627 41.1907 22.361 40.449 22.3513Z" fill="#F9B3FF"/>
+                                </svg>
+                            </button>
+    
+                            <button class="next-btn">
+                                <svg width="21" height="16" viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9.7523 7.00974C9.96465 7.17909 10.0918 7.45528 10.0933 7.75067V8.50374C10.0918 8.79912 9.96465 9.07531 9.7523 9.24466L1.89818 15.5364C1.63772 15.7236 1.30609 15.7236 1.04563 15.5364L0.917742 15.4636C0.684796 15.3027 0.537069 15.0205 0.523438 14.7105V1.53176C0.524299 1.20799 0.673924 0.908397 0.917742 0.742251L1.04563 0.669374C1.30451 0.476094 1.63929 0.476094 1.89818 0.669374L9.7523 7.00974ZM20.4092 7.00974L12.5551 0.717959C12.2962 0.524679 11.9614 0.524679 11.7025 0.717959L11.5746 0.790836C11.3308 0.956982 11.1812 1.25657 11.1803 1.58035V14.7105C11.1833 15.0336 11.3324 15.3321 11.5746 15.5L11.7025 15.5729C11.963 15.7601 12.2946 15.7601 12.5551 15.5729L20.4092 9.2811C20.6215 9.11175 20.7487 8.83556 20.7502 8.54018V7.78711C20.7593 7.4789 20.631 7.18637 20.4092 7.00974Z" fill="white"/>
+                                </svg>                                    
+                            </button>
+                        </div>
+    
+                        <div class="main-player">
+                            <p>01:23</p>
+    
+                            <div class="range-input-group">
+                                <p>$0.93</p>
+                                <input id="range-input" type="range" min="0" max="190.8" step="1" value="0" disabled>
+                            </div>
+    
+                            <p>03:18</p>
+                        </div>
+    
+                        <div class="controls">
+                            <button class="mute-unmute-btn">
+                                <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19.7668 4.79175L18.5647 5.80996C19.7997 7.27962 20.458 9.1517 20.416 11.0746C20.374 12.9974 19.6347 14.8387 18.3369 16.2526L19.4918 17.3576C21.0503 15.661 21.9383 13.4509 21.9889 11.1427C22.0395 8.83458 21.2493 6.58731 19.7668 4.82332V4.79175Z" fill="white"/>
+                                    <path d="M15.3829 7.88577C16.1236 8.76824 16.518 9.89214 16.492 11.0462C16.4659 12.2003 16.0212 13.3051 15.2415 14.1529L16.3964 15.2264C17.4357 14.0948 18.0276 12.6207 18.0609 11.0813C18.0942 9.54195 17.5665 8.04341 16.5771 6.86755L15.3829 7.88577Z" fill="white"/>
+                                    <path d="M12.5703 22.0936C12.4664 22.0931 12.3635 22.072 12.2678 22.0313C12.172 21.9907 12.0853 21.9313 12.0125 21.8568L6.02589 15.779H0.785644C0.577278 15.779 0.377447 15.6959 0.23011 15.5478C0.0827729 15.3998 0 15.1991 0 14.9897V7.09657C0 6.88723 0.0827729 6.68646 0.23011 6.53844C0.377447 6.39041 0.577278 6.30725 0.785644 6.30725H6.02589L12.0125 0.229527C12.1597 0.0825164 12.3588 0 12.5664 0C12.7739 0 12.9731 0.0825164 13.1203 0.229527C13.2683 0.375259 13.353 0.573851 13.3559 0.782048V21.3042C13.3559 21.5136 13.2732 21.7143 13.1258 21.8624C12.9785 22.0104 12.7787 22.0936 12.5703 22.0936Z" fill="white"/>
+                                </svg>
+                            </button>
+    
+                            <button class="replay-btn">
+                                <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17.5 4.9559L16.51 3.7988C15.6706 2.91304 14.6606 2.20814 13.5414 1.72698C12.4222 1.24583 11.2173 0.998484 10 1.00001C5.03125 1.00001 1 5.05009 1 10.0421C1 15.034 5.03125 19.0841 10 19.0841C11.8614 19.084 13.677 18.5043 15.197 17.4248C16.717 16.3453 17.8666 14.819 18.4876 13.0561" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+                                    <path d="M20.4999 2.57384V7.7815C20.4999 7.98134 20.4209 8.17299 20.2803 8.3143C20.1396 8.45561 19.9488 8.535 19.7499 8.535H14.5665C13.8981 8.535 13.5634 7.72357 14.0359 7.24886L19.2198 2.04073C19.6923 1.56508 20.4999 1.90228 20.4999 2.57384Z" fill="white"/>
+                                </svg>                                
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="mobile-v">
+                        <div class="main-player">
+                            <p>01:23</p>
+    
+                            <div class="range-input-group">
+                                <p>$0.93</p>
+                                <input id="range-input" type="range" min="0" max="190.8" step="1" value="0" disabled>
+                            </div>
+    
+                            <p>03:18</p>
+                        </div>
+    
+                        <div class="controls" style="margin-top: 20px;">
+                            <button class="replay-btn">
+                                <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M17.5 4.9559L16.51 3.7988C15.6706 2.91304 14.6606 2.20814 13.5414 1.72698C12.4222 1.24583 11.2173 0.998484 10 1.00001C5.03125 1.00001 1 5.05009 1 10.0421C1 15.034 5.03125 19.0841 10 19.0841C11.8614 19.084 13.677 18.5043 15.197 17.4248C16.717 16.3453 17.8666 14.819 18.4876 13.0561" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"/>
+                                    <path d="M20.4999 2.57384V7.7815C20.4999 7.98134 20.4209 8.17299 20.2803 8.3143C20.1396 8.45561 19.9488 8.535 19.7499 8.535H14.5665C13.8981 8.535 13.5634 7.72357 14.0359 7.24886L19.2198 2.04073C19.6923 1.56508 20.4999 1.90228 20.4999 2.57384Z" fill="white"/>
+                                </svg>                                
+                            </button>
+
+                            <div class="controls" style="margin: 0px 20px;">
+                                <button class="prev-btn">
+                                    <svg width="26" height="30" viewBox="0 0 26 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.9665 16.2325C12.7599 16.0632 12.6362 15.787 12.6347 15.4916V14.7385C12.6362 14.4431 12.7599 14.1669 12.9665 13.9976L20.6086 7.71796C20.8605 7.52468 21.1862 7.52468 21.4381 7.71796L21.5625 7.79084C21.7983 7.95869 21.9433 8.25721 21.9462 8.58035V21.7105C21.9453 22.0343 21.7997 22.3339 21.5625 22.5L21.4381 22.5729C21.1862 22.7662 20.8605 22.7662 20.6086 22.5729L12.9665 16.2325ZM2.59744 16.2325L10.2395 22.5243C10.4914 22.7176 10.8171 22.7176 11.069 22.5243L11.1934 22.4514C11.4307 22.2853 11.5762 21.9857 11.5771 21.6619V8.53176C11.5742 8.20862 11.4292 7.91011 11.1934 7.74225L11.069 7.66937C10.8171 7.47609 10.4914 7.47609 10.2395 7.66937L2.59744 13.9976C2.39083 14.1669 2.26714 14.4431 2.26562 14.7385V15.4916C2.26714 15.787 2.39083 16.0632 2.59744 16.2325Z" fill="white"/>
+                                    </svg>                                    
+                                </button>
+        
+                                <button class="play-pause-btn">
+                                    <svg width="67" height="68" viewBox="0 0 67 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <ellipse cx="33.415" cy="33.8237" rx="33.3315" ry="33.4873" fill="white"/>
+                                        <path d="M29.1971 23.7078V42.6994C29.1874 43.4445 28.5885 44.0462 27.8468 44.056H25.1464C24.4047 44.0462 23.8058 43.4445 23.7961 42.6994V23.7078C23.8058 22.9627 24.4047 22.361 25.1464 22.3513H27.8468C28.5885 22.361 29.1874 22.9627 29.1971 23.7078ZM40.449 22.3513H37.7486C37.0069 22.361 36.408 22.9627 36.3983 23.7078V42.6994C36.408 43.4445 37.0069 44.0462 37.7486 44.056H40.449C41.1907 44.0462 41.7896 43.4445 41.7993 42.6994V23.7078C41.7896 22.9627 41.1907 22.361 40.449 22.3513Z" fill="#F9B3FF"/>
+                                    </svg>
+                                </button>
+        
+                                <button class="next-btn">
+                                    <svg width="21" height="16" viewBox="0 0 21 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.7523 7.00974C9.96465 7.17909 10.0918 7.45528 10.0933 7.75067V8.50374C10.0918 8.79912 9.96465 9.07531 9.7523 9.24466L1.89818 15.5364C1.63772 15.7236 1.30609 15.7236 1.04563 15.5364L0.917742 15.4636C0.684796 15.3027 0.537069 15.0205 0.523438 14.7105V1.53176C0.524299 1.20799 0.673924 0.908397 0.917742 0.742251L1.04563 0.669374C1.30451 0.476094 1.63929 0.476094 1.89818 0.669374L9.7523 7.00974ZM20.4092 7.00974L12.5551 0.717959C12.2962 0.524679 11.9614 0.524679 11.7025 0.717959L11.5746 0.790836C11.3308 0.956982 11.1812 1.25657 11.1803 1.58035V14.7105C11.1833 15.0336 11.3324 15.3321 11.5746 15.5L11.7025 15.5729C11.963 15.7601 12.2946 15.7601 12.5551 15.5729L20.4092 9.2811C20.6215 9.11175 20.7487 8.83556 20.7502 8.54018V7.78711C20.7593 7.4789 20.631 7.18637 20.4092 7.00974Z" fill="white"/>
+                                    </svg>                                    
+                                </button>
+                            </div>
+
+                            <button class="mute-unmute-btn">
+                                <svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M19.7668 4.79175L18.5647 5.80996C19.7997 7.27962 20.458 9.1517 20.416 11.0746C20.374 12.9974 19.6347 14.8387 18.3369 16.2526L19.4918 17.3576C21.0503 15.661 21.9383 13.4509 21.9889 11.1427C22.0395 8.83458 21.2493 6.58731 19.7668 4.82332V4.79175Z" fill="white"/>
+                                    <path d="M15.3829 7.88577C16.1236 8.76824 16.518 9.89214 16.492 11.0462C16.4659 12.2003 16.0212 13.3051 15.2415 14.1529L16.3964 15.2264C17.4357 14.0948 18.0276 12.6207 18.0609 11.0813C18.0942 9.54195 17.5665 8.04341 16.5771 6.86755L15.3829 7.88577Z" fill="white"/>
+                                    <path d="M12.5703 22.0936C12.4664 22.0931 12.3635 22.072 12.2678 22.0313C12.172 21.9907 12.0853 21.9313 12.0125 21.8568L6.02589 15.779H0.785644C0.577278 15.779 0.377447 15.6959 0.23011 15.5478C0.0827729 15.3998 0 15.1991 0 14.9897V7.09657C0 6.88723 0.0827729 6.68646 0.23011 6.53844C0.377447 6.39041 0.577278 6.30725 0.785644 6.30725H6.02589L12.0125 0.229527C12.1597 0.0825164 12.3588 0 12.5664 0C12.7739 0 12.9731 0.0825164 13.1203 0.229527C13.2683 0.375259 13.353 0.573851 13.3559 0.782048V21.3042C13.3559 21.5136 13.2732 21.7143 13.1258 21.8624C12.9785 22.0104 12.7787 22.0936 12.5703 22.0936Z" fill="white"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box-top-part-3">
+                    <button>See More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Links Section -->
+    <section class="links links-v1">
+        <div class="container">
+            <div class="links-column">
+                <h4>Categories <i class="far fa-chevron-down"></i></h4>
+
+                <div class="links-column-links">
+                    <a href="">Digital Artwork</a>
+                    <a href="">E-Books</a>
+                    <a href="">Video Games</a>
+                    <a href="">Video Templates & FX</a>
+                    <a href="">Audio Files</a>
+                    <a href="">Programming & Tech</a>
+                </div>
+            </div>
+
+            <div class="links-column">
+                <h4>About <i class="far fa-chevron-down"></i></h4>
+
+                <div class="links-column-links">
+                    <a href="">About Us</a>
+                    <a href="">Partnerships</a>
+                    <a href="">Privacy Policy</a>
+                    <a href="">Terms of Service</a>
+                </div>
+            </div>
+
+            <div class="links-column">
+                <h4>Support <i class="far fa-chevron-down"></i></h4>
+
+                <div class="links-column-links">
+                    <a href="">Help Center</a>
+                    <a href="">Discord</a>
+                </div>
+            </div>
+
+            <div class="links-column">
+                <h4>Community <i class="far fa-chevron-down"></i></h4>
+
+                <div class="links-column-links">
+                    <a href="">Events</a>
+                    <a href="">Blog</a>
+                    <a href="">Forum</a>
+                </div>
+            </div>
+
+            <div class="links-column">
+                <h4>Social <i class="far fa-chevron-down"></i></h4>
+
+                <div class="links-column-links">
+                    <a href="">Youtube</a>
+                    <a href="">Instagram</a>
+                    <a href="">Facebook</a>
+                    <a href="">Twitter</a>
+                    <a href="">Clubhouse</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer footer-v1">
+        <div class="container">
+            <p><span>Payolie</span> Copyright 2021, made with ❤️ by Yaakoub El Hbari</p>
+        </div>
+    </footer>
+
+    <!-- Js Lib Files -->
+    <script src="./assets/libs/jquery/jquery.min.js"></script>
+
+    <!-- Js Main Files -->
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/pages/product.js"></script>
+
+    <script>
+
+        // Slider
+        let slider = document.getElementById('range-input');
+        
+        // Play Function: Duration in Seconds
+        function play(duration) {
+            setInterval(function() {
+                if(slider.value < duration) {
+                    slider.value = parseInt(slider.value) + 1;
+
+                    let percent = (slider.value / duration) * 100;
+
+                    let x = ((slider.value - slider.min) / (slider.max - slider.min) * 100 );
+                    let color = 'linear-gradient(90deg, rgb(255, 255, 255)' + percent + '%, rgba(255, 255, 255, 0.15)' + percent + '%)';
+                    slider.style.background = color;
+                    document.querySelector('.range-input-group p').style.opacity = 1;
+                    document.querySelector('.range-input-group p').style.left = percent + '%';
+                }
+            }, 1000);
+        }
+
+        play(190.8);
+
+        // Player
+        $('.player-open-trigger').on('click', function() {
+            $('.player').addClass('active');
+        });
+
+        $('.player-close-trigger').on('click', function() {
+            $('.player').removeClass('active');
+        });
+
+    </script>
+    
+</body>
+</html>

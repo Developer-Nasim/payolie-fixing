@@ -1,0 +1,104 @@
+@import '../includes/_imports.css';
+
+/* Find Music Section */
+.find-music {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(#EA69FF, #B800E7);
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.find-music .logo {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    display: block;
+    width: 52px;
+}
+
+.find-music .logo img {
+    width: 100%;
+}
+
+.find-music .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.find-music .container h1 {
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+.find-music .container .input-group {
+    width: 720px;
+    height: fit-content;
+    background: #ffffff;
+    box-shadow: 0px 22px 51px rgba(0, 0, 0, 0.08);
+    border-radius: 16px;
+    position: relative;
+}
+
+.find-music .container .input-group input {
+    width: 100%;
+    height: 70px;
+    padding: 0px 30px;
+    padding-right: 95px;
+    font-size: 22px;
+    color: #2D3748;
+}
+
+.find-music .container .input-group input::placeholder {
+    color: #E266ED;
+}
+
+.find-music .container .input-group button {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    display: flex;
+}
+
+/* Responsive */
+@media only screen and (max-width: 1300px) {
+    .find-music .logo {
+        top: 15px;
+        left: 15px;
+        width: 40px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .find-music .container h1 {
+        font-size: 41px;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .find-music .container .input-group {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .find-music .container h1 {
+        font-size: 31px;
+    }
+
+    .find-music .container .input-group input {
+        height: 60px;
+        padding-right: 85px;
+    }
+
+    .find-music .container .input-group button svg {
+        width: 30px;
+        height: 28px;
+    }
+}

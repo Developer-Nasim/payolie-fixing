@@ -1,0 +1,114 @@
+@import '../includes/_imports.css';
+
+/* Artist Ad Portal Section */
+.artist-ad-portal {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.artist-ad-portal .logo {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    display: block;
+    width: 52px;
+}
+
+.artist-ad-portal .logo img {
+    width: 100%;
+}
+
+.artist-ad-portal .container {
+    display: flex;
+    justify-content: center;
+}
+
+.artist-ad-portal .container form {
+    width: 635px;
+    padding: 50px 0px;
+    background: rgba(252, 247, 252, 0.6);
+    box-shadow: 2px 2px 26px #F79AFF;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.artist-ad-portal .container form svg {
+    margin-bottom: 20px;
+}
+
+.artist-ad-portal .container form h3 {
+    font-size: 22px;
+    font-weight: 400;
+    color: #2D3748;
+}
+
+.artist-ad-portal .container form .or {
+    margin: 20px 0px;
+    display: flex;
+    align-items: center;
+    opacity: 0.3;
+}
+
+.artist-ad-portal .container form .or span {
+    display: block;
+    width: 55px;
+    height: 1px;
+    background: #49214D;
+}
+
+.artist-ad-portal .container form .or p {
+    margin: 0px 10px;
+    font-size: 18px;
+    color: #49214D;
+}
+
+.artist-ad-portal .container form .input-group label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 169px;
+    height: 45px;
+    border: 1px solid #F79AFF;
+    background: #F79AFF;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #ffffff;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.artist-ad-portal .container form .input-group label:hover {
+    background: transparent;
+    color: #F79AFF;
+}
+
+/* Responsive */
+@media only screen and (max-width: 1300px) {
+    .artist-ad-portal .logo {
+        top: 25px;
+        left: 15px;
+        width: 40px;
+    }
+
+    .artist-ad-portal .container form {
+        width: 540px;
+        padding: 30px 0px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .artist-ad-portal .container form {
+        width: 100%;
+    }  
+}
+
+@media only screen and (max-width: 580px) {
+    .artist-ad-portal .container form {
+        margin-top: 40px;
+    }
+}

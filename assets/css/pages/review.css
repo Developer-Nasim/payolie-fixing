@@ -1,0 +1,196 @@
+@import '../includes/_imports.css';
+
+/* Review Section */
+.review {
+    width: 100%;
+    min-height: 100vh;
+    background: url('../../images/pages/review/review-img-1.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.review .top-btn {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+.review .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.review .container .box {
+    width: 950px;
+    background: #37083B;
+    border-radius: 40px;
+}
+
+.review .container .box .box-top {
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.review .container .box .box-top .box-top-left h2 {
+    font-size: 21px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.review .container .box .box-top .box-top-left .available-box {
+    width: 180px;
+    height: 39px;
+    background: #FEF5FF;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.review .container .box .box-top .box-top-left .available-box a {
+    display: flex;
+    margin-right: 5px;
+}
+
+.review .container .box .box-top .box-top-left .available-box a:last-child {
+    margin-right: 0px;
+}
+
+.review .container .box .box-bottom {
+    padding: 0px 0px 50px 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.review .container .box .box-bottom .box-bottom-left {
+    width: 40%;
+    margin-right: 30px;
+}
+
+.review .container .box .box-bottom .box-bottom-left h2 {
+    font-size: 26px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.review .container .box .box-bottom .box-bottom-left p {
+    font-size: 16px;
+    font-weight: 300;
+    color: #ffffff;
+}
+
+.review .container .box .box-bottom .box-bottom-right {
+    width: 60%;
+    overflow-x: scroll;
+}
+
+.review .container .box .box-bottom .box-bottom-right::-webkit-scrollbar {
+    display: none;
+}
+
+.review .container .box .box-bottom .box-bottom-right .comments {
+    width: fit-content;
+    display: flex;
+}
+
+.review .container .box .box-bottom .box-bottom-right .comments .comment {
+    width: 305px;
+    padding: 30px;
+    border: 5px solid transparent;
+    background: #fff;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin-right: 20px;
+}
+
+.review .container .box .box-bottom .box-bottom-right .comments .comment:last-child {
+    margin-right: 50px;
+}
+
+.review .container .box .box-bottom .box-bottom-right .comments .comment.active {
+    background: #F882BF;
+}
+
+.review .container .box .box-bottom .box-bottom-right .comments .comment p {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.review .container .box .box-bottom .box-bottom-right .comments .comment.active p {
+    color: #ffffff;
+}
+
+/* Responsive */
+@media only screen and (max-width: 1080px) {
+    .review .container .box {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .review .container .box .box-bottom .box-bottom-right .comments::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .review {
+        padding-top: 90px;
+        padding-bottom: 50px;
+    }
+
+    .review .container .box {
+        border-radius: 20px;
+    }
+
+    .review .container .box .box-top .box-top-left {
+        margin-right: 30px;
+    }
+
+    .review .container .box .box-bottom {
+        flex-direction: column;
+    }
+
+    .review .container .box .box-bottom .box-bottom-left {
+        width: 100%;
+        margin-right: 0px;
+        margin-bottom: 30px;
+        padding-right: 50px;
+    }
+
+    .review .container .box .box-bottom .box-bottom-right {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .review .container .box .box-top {
+        padding: 50px 30px;
+    }
+
+    .review .container .box .box-top .box-top-left h2 br {
+        display: none;
+    }
+
+    .review .container .box .box-bottom {
+        padding: 0px 0px 50px 30px;
+    }
+
+    .review .container .box .box-bottom .box-bottom-right .comments .comment {
+        width: 230px;
+    }
+
+    .review .container .box .box-bottom .box-bottom-right .comments .comment:last-child {
+        margin-right: 30px;
+    }
+}

@@ -1,0 +1,331 @@
+@import '../includes/_imports.css';
+
+/* Artist Ad Portal Section */
+.artist-ad-portal {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.artist-ad-portal .logo {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    display: block;
+    width: 52px;
+}
+
+.artist-ad-portal .logo img {
+    width: 100%;
+}
+
+.artist-ad-portal .container {
+    width: fit-content;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.artist-ad-portal .container .title {
+    margin-bottom: 40px;
+}
+
+.artist-ad-portal .container .title .mobile-v {
+    display: none;
+}
+
+.artist-ad-portal .container .box {
+    width: 635px;
+    padding: 30px 100px;
+    background: rgba(252, 247, 252, 0.6);
+    box-shadow: 2px 2px 26px #F79AFF;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.artist-ad-portal .container .box svg {
+    margin-bottom: 5px;
+}
+
+.artist-ad-portal .container .box h3 {
+    font-size: 20px;
+    font-weight: 400;
+    color: #49214D;
+    opacity: 0.4;
+    margin-bottom: 40px;
+}
+
+.artist-ad-portal .container .box .range-input-group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.artist-ad-portal .container .box .range-input-group label {
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 500;
+    color: #49214D;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.artist-ad-portal .container .box .range-input-group label span {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 400;
+    color: #F79AFF;
+}
+
+.artist-ad-portal .container .box .range-input-group input {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 6px;
+    border: none;
+    outline: none;
+    background: rgba(73, 33, 88, 0.08);
+    border-radius: 100px;
+}
+
+.artist-ad-portal .container .box .range-input-group input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 18px;
+    height: 18px;
+    background: #F79AFF;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.artist-ad-portal .container .box .range-input-group input::-webkit-slider-thumb:hover {
+    outline: 6px solid #F8DCFA;
+}
+
+.artist-ad-portal .container .box .input-group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.artist-ad-portal .container .box .input-group label {
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 500;
+    color: #49214D;
+    margin-bottom: 10px;
+}
+
+.artist-ad-portal .container .box .input-group .select {
+    position: relative;
+}
+
+.artist-ad-portal .container .box .input-group .select select {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 100%;
+    height: 40px;
+    padding: 0px 10px;
+    border: 2px solid rgba(73, 33, 77, 0.08);
+    background: #ffffff;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #49214D;
+}
+
+.artist-ad-portal .container .box .input-group .select i {
+    position: absolute;
+    top: calc(50% + 1px);
+    right: 12px;
+    transform: translateY(-50%);
+    font-size: 14px;
+    color: #49214D;
+}
+
+.artist-ad-portal .bottom-btns {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: calc(50% + 43px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.artist-ad-portal .bottom-btns .prev-btn {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #F79AFF;
+    background: #F79AFF;
+    border-radius: 50%;
+    font-size: 18px;
+    color: #fff;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+}
+
+.artist-ad-portal .bottom-btns .prev-btn:hover {
+    background: transparent;
+    color: #F79AFF;
+}
+
+.artist-ad-portal .bottom-btns.desktop-v .prev-btn {
+    border: 2px solid #EBE7E7;
+    background: #fff;
+    box-shadow: 0px 4px 13px rgba(165, 165, 165, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #F367FF;
+}
+
+.artist-ad-portal .bottom-btns.desktop-v .prev-btn:hover {
+    border-color: #F367FF;
+    background: #F367FF;
+    box-shadow: none;
+    color: #fff;
+}
+
+.artist-ad-portal .bottom-btns.desktop-v .prev-btn svg path {
+    transition: all 0.3s ease;
+}
+
+.artist-ad-portal .bottom-btns.desktop-v .prev-btn:hover svg path {
+    fill: #fff;
+}
+
+.artist-ad-portal .bottom-btns .next-btn {
+    width: 100px;
+    height: 50px;
+    border: 2px solid #F79AFF;
+    background: #F79AFF;
+    border-radius: 100px;
+    font-size: 18px;
+    color: #fff;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+}
+
+.artist-ad-portal .bottom-btns .next-btn:hover {
+    background: transparent;
+    color: #F79AFF;
+}
+
+.artist-ad-portal .bottom-btns.desktop-v .next-btn {
+    width: 130px;
+    border: 2px solid #EBE7E7;
+    background: #fff;
+    box-shadow: 0px 4px 13px rgba(165, 165, 165, 0.4);
+    color: #F367FF;
+}
+
+.artist-ad-portal .bottom-btns.desktop-v .next-btn:hover {
+    border-color: #F367FF;
+    background: #F367FF;
+    box-shadow: none;
+    color: #fff;
+}
+
+.artist-ad-portal .bottom-btns .next-btn i {
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+.artist-ad-portal .bottom-btns.mobile-v {
+    display: none;
+}
+
+/* Responsive */
+@media only screen and (max-width: 1480px) {
+    .artist-ad-portal .container .title {
+        margin-bottom: 30px;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .artist-ad-portal .logo {
+        top: 25px;
+        left: 15px;
+        width: 40px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .artist-ad-portal {
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+
+    .artist-ad-portal .container {
+        width: 90%;
+        margin: 0px auto;
+    }
+
+    .artist-ad-portal .container .box {
+        width: 100%;
+    }
+
+    .artist-ad-portal .bottom-btns {
+        margin-top: 40px;
+        width: 90%;
+        position: static;
+        transform: translateX(0px);
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    .artist-ad-portal .container .title {
+        display: flex;
+        justify-content: center;
+    }
+
+    .artist-ad-portal .container .title svg {
+        width: 85%;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    .artist-ad-portal .container {
+        margin-top: 40px;
+    }
+
+    .artist-ad-portal .container .box {
+        padding: 30px;
+    }
+
+    .artist-ad-portal .bottom-btns {
+        display: none;
+    }
+
+    .artist-ad-portal .bottom-btns.mobile-v {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .artist-ad-portal .bottom-btns .next-btn {
+        width: 100%;
+    }
+
+    .artist-ad-portal .bottom-btns .prev-btn {
+        width: 100%;
+        border: none;
+        background: none;
+        border-radius: 100px;
+        font-size: 14px;
+        color: #F79AFF;
+    }
+}

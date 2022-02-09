@@ -1,0 +1,130 @@
+@import '../includes/_imports.css';
+
+main {
+    width: 100%;
+    height: 100vh;
+    padding: 25px 25px 25px 50px;
+    background: var(--primary-color);
+    display: grid;
+    grid-template-columns: 325px auto;
+}
+
+/* Content Section */
+main .content {
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    border-radius: 48px;
+    overflow-y: scroll;
+}
+
+main .content::-webkit-scrollbar {
+    display: none;
+}
+
+main .content .content-bottom {
+    width: 100%;
+    padding: 0px 60px 60px 60px;
+}
+
+main .content .content-bottom .boxes {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+main .content .content-bottom .boxes .box {
+    width: 100%;
+    font-size: 0px;
+}
+
+main .content .content-bottom .boxes .box img {
+    width: 100%;
+    border-radius: 16px 16px 0px 0px;
+}
+
+main .content .content-bottom .boxes .box .box-content {
+    margin-top: -20px;
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    padding: 20px;
+    background: var(--primary-color);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .content .content-bottom .boxes .box .box-content h3 {
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+main .content .content-bottom .boxes .box .box-content button {
+    width: 100%;
+    height: 40px;
+    background: #ffffff;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+main .content .content-bottom .boxes .box .box-content button:hover {
+    opacity: 0.8;
+}
+
+main .content .content-bottom .boxes .box .box-content button span {
+    background: -webkit-linear-gradient(#172B85, #172B85, #4563ED);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* Responsive */
+@media only screen and (max-width: 1620px) {
+    main .content .content-bottom .boxes {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media only screen and (max-width: 1240px) {
+    main .content .content-bottom .boxes {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 1080px) {
+    main {
+        padding: 25px;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    main .content {
+        border-radius: 30px;
+    }
+
+    main .content .content-bottom {
+        padding: 0px 30px 30px 30px;
+    }
+}
+
+@media only screen and (max-width: 568px) {
+    main {
+        padding: 10px;
+    }
+
+    main .content {
+        border-radius: 20px;
+    }
+
+    main .content .content-bottom .boxes {
+        grid-template-columns: 1fr;
+    }
+}

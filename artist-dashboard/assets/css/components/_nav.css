@@ -1,0 +1,31 @@
+/* Nav */
+main nav {
+    width: 100%;
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    display: none;
+}
+
+main nav .logo {
+    display: flex;
+    width: 50px;
+    margin-left: 10px;
+}
+
+main nav .logo img {
+    width: 100%;
+}
+
+main nav .side-bar-open-trigger {
+    display: flex;
+    margin-right: 10px;
+}
+
+/* Responsive */
+@media only screen and (max-width: 1080px) {
+    main nav {
+        display: flex;
+    }
+}

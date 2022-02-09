@@ -1,0 +1,52 @@
+@import '../includes/_imports.css';
+
+/* Order Completed Section */
+.order-completed {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(#EA69FF, #B800E7);
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.order-completed .container h1 {
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    color: #ffffff;
+}
+
+.order-completed .logo {
+    display: block;
+    width: 150px;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.order-completed .logo img {
+    width: 100%;
+}
+
+/* Responsive */
+@media only screen and (max-width: 1024px) {
+    .order-completed .container h1 {
+        font-size: 41px;
+    }
+
+    .order-completed .logo {
+        bottom: 50px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .order-completed .container h1 {
+        font-size: 31px;
+    }
+
+    .order-completed .logo {
+        bottom: 30px;
+    }
+}

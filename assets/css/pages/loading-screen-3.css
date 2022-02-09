@@ -1,0 +1,27 @@
+@import '../includes/_imports.css';
+
+/* Loading Screen Section */
+.loading-screen {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.loading-screen .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.loading-screen .container img {
+    width: 450px;
+    height: auto !important;
+}
+
+/* Responsive */
+@media only screen and (max-width: 500px) {
+    .loading-screen .container img {
+        width: 250px;
+    }
+}

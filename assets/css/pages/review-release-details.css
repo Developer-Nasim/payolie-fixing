@@ -1,0 +1,299 @@
+@import '../includes/_imports.css';
+
+/* Review Release Details Section */
+.review-release-details {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(#F79AFF, #DFDFDF, #F79AFF);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.review-release-details .logo {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    display: block;
+    width: 165px;
+}
+
+.review-release-details .logo img {
+    width: 100%;
+}
+
+.review-release-details .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.review-release-details .container h1 {
+    font-size: 45px;
+    font-weight: 700;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 40px;
+}
+
+.review-release-details .container .box {
+    width: 900px;
+    padding: 70px 40px;
+    background: #38183A;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: 180px auto auto;
+    grid-gap: 50px;
+}
+
+.review-release-details .container .box .box-left {
+    width: 100%;
+}
+
+.review-release-details .container .box .box-left img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.review-release-details .container .box .box-center h2 {
+    font-size: 35px;
+    font-weight: 700;
+    color: #F882BF;
+}
+
+.review-release-details .container .box .box-center p {
+    font-size: 18px;
+    color: #B9AAB8;
+    margin-bottom: 30px;
+}
+
+.review-release-details .container .box .box-center button {
+    width: 228px;
+    height: 65px;
+    border: 1px solid #F882BF;
+    background: #F882BF;
+    border-radius: 11px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.review-release-details .container .box .box-center button:hover {
+    background: transparent;
+    color: #F882BF;
+}
+
+.review-release-details .container .box .box-center button i {
+    font-size: 14px;
+}
+
+.review-release-details .container .box .box-right h3 {
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #B9AAB8;
+    margin-bottom: 10px;
+}
+
+.review-release-details .container .box .box-right .found-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.review-release-details .container .box .box-right .found-links .link {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+    margin-bottom: 10px;
+}
+
+.review-release-details .container .box .box-right .found-links .link:last-child {
+    margin-bottom: 0px;
+}
+
+.review-release-details .container .box .box-right .found-links .link:hover {
+    opacity: 0.6;
+}
+
+.review-release-details .container .box .box-right .found-links .link p {
+    margin-left: 12px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #F882BF;
+}
+
+.review-release-details .bottom-btns {
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.review-release-details .bottom-btns .prev-btn {
+    width: 50px;
+    height: 50px;
+    border: 2px solid #A720B4;
+    background: transparent;
+    border-radius: 50%;
+    font-size: 18px;
+    color: #A720B4;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+}
+
+.review-release-details .bottom-btns .prev-btn:hover {
+    background: #A720B4;
+    color: #fff;
+}
+
+.review-release-details .bottom-btns .next-btn {
+    width: 100px;
+    height: 50px;
+    border: 2px solid #A720B4;
+    background: transparent;
+    border-radius: 100px;
+    font-size: 18px;
+    color: #A720B4;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+}
+
+.review-release-details .bottom-btns .next-btn:hover {
+    background: #A720B4;
+    color: #fff;
+}
+
+.review-release-details .bottom-btns .next-btn i {
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+/* Responsive */
+@media only screen and (max-width: 1400px) {
+    .review-release-details .container h1 {
+        margin-bottom: 20px;
+    }
+    
+    .review-release-details .container .box {
+        padding: 30px;
+    }
+
+    .review-release-details .bottom-btns {
+        bottom: 30px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .review-release-details {
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+
+    .review-release-details .container .box {
+        width: 100%;
+        grid-template-columns: 200px 1fr;
+    }
+
+    .review-release-details .container .box .box-right {
+        grid-column: 1 / -1;
+    }
+
+    .review-release-details .container .box .box-right .found-links {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .review-release-details .container .box .box-right .found-links .link {
+        margin-bottom: 0px;
+    }
+
+    .review-release-details .bottom-btns {
+        margin-top: 40px;
+        width: 90%;
+        position: static;
+        transform: translateX(0px);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .review-release-details .logo {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .review-release-details .container h1 {
+        font-size: 30px;
+    }
+
+    .review-release-details .container .box {
+        width: 400px;
+        padding: 60px 40px;
+        grid-template-columns: 1fr;
+        grid-gap: 40px;
+    }
+
+    .review-release-details .container .box .box-left {
+        display: flex;
+        justify-content: center;
+    }
+
+    .review-release-details .container .box .box-left img {
+        width: 70%;
+    }
+
+    .review-release-details .container .box .box-center {
+        width: 100%;
+    }
+
+    .review-release-details .container .box .box-center h2 {
+        text-align: center;
+    }
+
+    .review-release-details .container .box .box-center p {
+        text-align: center;
+    }
+
+    .review-release-details .container .box .box-center button {
+        width: 100%;
+    }
+
+    .review-release-details .container .box .box-right {
+        width: 100%;
+    }
+
+    .review-release-details .container .box .box-right .found-links {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .review-release-details .container .box .box-right .found-links .link {
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    .review-release-details .container h1 {
+        margin-top: 40px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .review-release-details .container .box {
+        width: 350px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .review-release-details .container .box {
+        width: 300px;
+    }
+}

@@ -1,0 +1,424 @@
+@import '../includes/_imports.css';
+
+/* Artist Ad Portal Section */
+.artist-ad-portal {
+    width: 100%;
+    min-height: 100vh;
+    background: url('../../images/pages/artist-ad-portal-checkout/artist-ad-portal-img-1.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.artist-ad-portal .logo {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    display: block;
+    width: 52px;
+}
+
+.artist-ad-portal .logo img {
+    width: 100%;
+}
+
+.artist-ad-portal .container {
+    width: 90%;
+    max-width: 90%;
+    margin: 0px 0px 0px auto;
+    display: grid;
+    grid-template-columns: 400px auto;
+    grid-gap: 100px;
+}
+
+.artist-ad-portal .container .artist-ad-portal-left {
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.artist-ad-portal .container .artist-ad-portal-left h1 {
+    font-size: 33px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+.artist-ad-portal .container .artist-ad-portal-left .cart-box {
+    width: 100%;
+    padding: 50px;
+    background: linear-gradient(#5C2961, #9D00AB);
+    border-radius: 5px;
+}
+
+.artist-ad-portal .container .artist-ad-portal-left .cart-box .release-badge {
+    width: 82px;
+    height: 26px;
+    background: #ffffff;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.artist-ad-portal .container .artist-ad-portal-left .cart-box .release-badge p {
+    font-size: 15px;
+    font-weight: 500;
+    color: #49214C;
+}
+
+.artist-ad-portal .container .artist-ad-portal-left .cart-box .row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.artist-ad-portal .container .artist-ad-portal-left .cart-box .row h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.artist-ad-portal .container .artist-ad-portal-left .cart-box .row h3 span {
+    display: block;
+    font-size: 13px;
+    font-weight: 500;
+    color: #D872E3;
+}
+
+.artist-ad-portal .container .artist-ad-portal-left .cart-box .row p {
+    font-size: 15px;
+    font-weight: 500;
+    color: #D872E3;
+}
+
+.artist-ad-portal .container .artist-ad-portal-left .cart-box .row p span {
+    color: #ffffff;
+}
+
+.artist-ad-portal .container .artist-ad-portal-left .cart-box .row h4 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.artist-ad-portal .container .artist-ad-portal-left .cart-box .row span {
+    display: block;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.artist-ad-portal .container .artist-ad-portal-left .cart-box .row h5 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.artist-ad-portal .container .artist-ad-portal-left .cart-box .divider {
+    margin: 20px 0px;
+    width: 100%;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.artist-ad-portal .container .artist-ad-portal-left .cart-box .coupon-text {
+    margin: 50px auto 0px auto;
+    width: fit-content;
+    font-size: 15px;
+    text-decoration: underline;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.artist-ad-portal .container .artist-ad-portal-left .cart-box .coupon-text:hover {
+    text-decoration: none;
+}
+
+.artist-ad-portal .container .artist-ad-portal-right {
+    width: 100%;
+    min-height: 90vh;
+    padding: 80px 50px;
+    background: #ffffff;
+    border-radius: 8px 0px 0px 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.artist-ad-portal .container .artist-ad-portal-right .create-account {
+    margin-bottom: 80px;
+}
+
+.artist-ad-portal .container .artist-ad-portal-right .create-account h2 {
+    font-size: 33px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.artist-ad-portal .container .artist-ad-portal-right .create-account .already-have-an-account-text {
+    font-size: 14px;
+    text-align: center;
+    text-decoration: underline;
+    color: #999999;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+
+.artist-ad-portal .container .artist-ad-portal-right .create-account .already-have-an-account-text:hover {
+    text-decoration: none;
+}
+
+.artist-ad-portal .container .artist-ad-portal-right .create-account form .input-group {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.artist-ad-portal .container .artist-ad-portal-right .create-account form .input-group input {
+    width: 100%;
+    height: 45px;
+    padding: 0px 15px;
+    border: 1px solid #8A3492;
+    border-radius: 5px;
+    font-size: 15px;
+    color: #8A3492;
+}
+
+.artist-ad-portal .container .artist-ad-portal-right .create-account form .input-group input::placeholder {
+    color: #8A3492;
+}
+
+.artist-ad-portal .container .artist-ad-portal-right .create-account form .inputs-group {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+.artist-ad-portal .container .artist-ad-portal-right .create-account form .agree-items {
+    margin-top: 20px;
+}
+
+.artist-ad-portal .container .artist-ad-portal-right .create-account form .agree-items .agree-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.artist-ad-portal .container .artist-ad-portal-right .create-account form .agree-items .agree-item .checkbox {
+    min-width: 17px;
+    max-width: 17px;
+    height: 17px;
+    border-radius: 3px;
+    background: #49214D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin-right: 10px;
+}
+
+.artist-ad-portal .container .artist-ad-portal-right .create-account form .agree-items .agree-item .checkbox.active {
+    background: #49214D;
+}
+
+.artist-ad-portal .container .artist-ad-portal-right .create-account form .agree-items .agree-item .checkbox i {
+    font-size: 12px;
+    color: #ffffff;
+    opacity: 0;
+    transition: all 0.2s ease;
+}
+
+.artist-ad-portal .container .artist-ad-portal-right .create-account form .agree-items .agree-item .checkbox.active i {
+    opacity: 1;
+}
+
+.artist-ad-portal .container .artist-ad-portal-right .create-account form .agree-items .agree-item p {
+    font-size: 15px;
+    word-break: break-all;
+    color: #999999;
+}
+
+.artist-ad-portal .container .artist-ad-portal-right .create-account form .agree-items .agree-item p a {
+    color: #D872E3;
+}
+
+.artist-ad-portal .container .artist-ad-portal-right .create-account form .agree-items .agree-item p a:hover {
+    text-decoration: underline;
+}
+
+.artist-ad-portal .container .artist-ad-portal-right .payment-info h2 {
+    font-size: 33px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.artist-ad-portal .container .artist-ad-portal-right .payment-info form {
+    width: 420px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.artist-ad-portal .container .artist-ad-portal-right .payment-info form .input-group {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.artist-ad-portal .container .artist-ad-portal-right .payment-info form .input-group input {
+    width: 100%;
+    height: 45px;
+    padding: 0px 15px;
+    border: 1px solid #8A3492;
+    border-radius: 5px;
+    font-size: 15px;
+    color: #8A3492;
+}
+
+.artist-ad-portal .container .artist-ad-portal-right .payment-info form .input-group input::placeholder {
+    color: #8A3492;
+}
+
+.artist-ad-portal .container .artist-ad-portal-right .payment-info form .inputs-group {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+.artist-ad-portal .container .artist-ad-portal-right .payment-info form .save-card-info {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.artist-ad-portal .container .artist-ad-portal-right .payment-info form .save-card-info .switch {
+    width: 35px;
+    height: 19px;
+    background: #76377C;
+    border-radius: 100px;
+    position: relative;
+    opacity: 0.3;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-right: 10px;
+}
+
+.artist-ad-portal .container .artist-ad-portal-right .payment-info form .save-card-info .switch.active {
+    opacity: 1;
+}
+
+.artist-ad-portal .container .artist-ad-portal-right .payment-info form .save-card-info .switch .switch-circle {
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 13px;
+    height: 13px;
+    background: #ffffff;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.artist-ad-portal .container .artist-ad-portal-right .payment-info form .save-card-info .switch.active .switch-circle {
+    left: 19px;
+}
+
+.artist-ad-portal .container .artist-ad-portal-right .payment-info form .save-card-info p {
+    font-size: 15px;
+    font-weight: 500;
+    color: #76377C;
+}
+
+.artist-ad-portal .container .artist-ad-portal-right .payment-info form button {
+    margin-top: 40px;
+    width: 200px;
+    height: 48px;
+    background: linear-gradient(120deg, #76377C, #E300FC);
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+.artist-ad-portal .container .artist-ad-portal-right .payment-info form button:hover {
+    opacity: 0.8;
+}
+
+/* Responsive */
+@media only screen and (max-width: 1300px) {
+    .artist-ad-portal .logo {
+        top: 25px;
+        left: 15px;
+        width: 40px;
+    }
+}
+
+@media only screen and (max-width: 1150px) {
+    .artist-ad-portal .container {
+        grid-gap: 50px;
+    }
+}
+
+@media only screen and (max-width: 1080px) {
+    .artist-ad-portal .container .artist-ad-portal-right .create-account form {
+        width: 100%;
+    }
+
+    .artist-ad-portal .container .artist-ad-portal-right .payment-info form {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .artist-ad-portal {
+        padding: 100px 0px;
+        justify-content: center;
+    }
+
+    .artist-ad-portal .container {
+        margin: auto;
+    }
+
+    .artist-ad-portal .container {
+        grid-template-columns: 1fr;
+    }
+
+    .artist-ad-portal .container .artist-ad-portal-left {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    .artist-ad-portal .container .artist-ad-portal-left h1 {
+        text-align: center;
+    }
+
+    .artist-ad-portal .container .artist-ad-portal-right {
+        height: fit-content;
+        min-height: fit-content;
+        border-radius: 8px;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .artist-ad-portal .container .artist-ad-portal-left .cart-box {
+        padding: 50px 30px;
+    }
+
+    .artist-ad-portal .container .artist-ad-portal-right {
+        padding: 50px 30px;
+    }
+
+    .artist-ad-portal .container .artist-ad-portal-right .create-account {
+        margin-bottom: 50px;
+    }
+}

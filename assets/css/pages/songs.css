@@ -1,0 +1,134 @@
+@import '../includes/_imports.css';
+
+/* Songs Section */
+.songs {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(#EA69FF, #B800E7);
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.songs .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.songs .container h1 {
+    font-size: 35px;
+    font-weight: 700;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 40px;
+}
+
+.songs .container .songs-wrapper {
+    width: 880px;
+}
+
+.songs .container .songs-wrapper .song {
+    width: 100%;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 11px;
+}
+
+.songs .container .songs-wrapper .song img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.songs .container .songs-wrapper .song h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #484848;
+}
+
+.songs .container .songs-wrapper .song p {
+    font-size: 14px;
+    color: #7C7C7C;
+    margin-bottom: 10px;
+}
+
+.songs .container .songs-wrapper .song h4 {
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    color: #E266ED;
+    margin-bottom: 10px;
+}
+
+.songs .container .songs-wrapper .song .available-box {
+    width: 100%;
+    height: 39px;
+    background: #FEF5FF;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.songs .container .songs-wrapper .song .available-box a {
+    display: flex;
+    margin-right: 5px;
+}
+
+.songs .container .songs-wrapper .song .available-box a:last-child {
+    margin-right: 0px;
+}
+
+.songs .container .slider-controls {
+    width: 980px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: calc(50% + 34px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.songs .container .slider-controls button {
+    font-size: 50px;
+    color: rgba(255, 255, 255, 0.6);
+    transition: all 0.3s ease;
+}
+
+.songs .container .slider-controls button:hover {
+    color: rgba(255, 255, 255, 1);
+}
+
+/* Responsive */
+@media only screen and (max-width: 1350px) {
+    .songs .container h1 {
+        margin-bottom: 20px;
+    }
+    
+    .songs .logo {
+        width: 125px;
+        bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .songs .container h1 {
+        font-size: 30px;
+    }
+
+    .songs .container .songs-wrapper {
+        width: 100%;
+    }
+
+    .songs .container .slider-controls {
+        margin-top: 20px;
+        width: 50px;
+        position: static;
+        transform: translate(0px, 0px);
+    }
+    
+    .songs .container .slider-controls button {
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,216 @@
+/**********footer************/
+#footer {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  justify-content: space-between;
+  padding: 110px 88px 88px 88px;
+  font-size: 20px;
+  line-height: 29px;
+  letter-spacing: 0.018em;
+}
+#footer ul {
+  list-style: none;
+}
+#footer ul li {
+  margin-bottom: 22px;
+}
+#footer a {
+  text-decoration: none;
+  color: #a98fa5;
+}
+.footer-head {
+  font-weight: 500;
+  color: #49214d !important;
+  margin-bottom: 40px;
+}
+/**********copyrights************/
+#copyright {
+  background: #fdf7fc;
+  padding: 39px 0 42px 88px;
+}
+.copyright-main {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+#copyright a {
+  text-decoration: none;
+  color: #49214d;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 29px;
+  margin-right: 40px;
+}
+#copyright p {
+  color: #49214d;
+  opacity: 0.5;
+  font-size: 20px;
+  line-height: 29px;
+  margin: 0;
+}
+
+@media screen and (min-width: 1600px) {
+  .container-main {
+    width: 85% !important;
+    margin: 0 auto !important;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .container-main {
+    width: 70% !important;
+    margin: 0 auto !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /*************Main Container**************/
+  .container-main {
+    width: 90% !important;
+    margin: 0 auto !important;
+  }
+  /**************footer***************/
+  .footer-main {
+    background-color: #fdf7fc;
+  }
+  #footer {
+    grid-template-columns: auto auto;
+    grid-row-gap: 15px;
+    justify-content: space-between;
+    padding: 40px 20px 18px 0px;
+  }
+  #footer ul li {
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  .footer-head {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 12px;
+  }
+  /**************Copyrights***************/
+  #copyright {
+    background-color: #ffffff;
+    padding: 10px 0;
+  }
+  #copyright a {
+    /* font-size: 14px;
+  margin-right: 20px; */
+    display: none;
+  }
+  #copyright p {
+    font-size: 12px;
+    margin: 0;
+  }
+  #copyright span {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1350px) {
+  /*************Main Container**************/
+  .container-main {
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  /**************footer***************/
+  .footer-main {
+    background-color: #fdf7fc;
+  }
+  #footer {
+    grid-template-columns: auto auto auto;
+    padding: 80px 0 58px 0;
+    grid-row-gap: 2em;
+  }
+  #footer ul li {
+    margin-bottom: 10px;
+    /* font-size: 12px; */
+  }
+  .footer-head {
+    /* font-size: 12px; */
+    margin-bottom: 22px;
+  }
+  /**************Copyrights***************/
+  #copyright {
+    background-color: #ffffff;
+    padding: 20px 0;
+  }
+}
+
+
+@media (max-width: 1260px) {
+  .navbar {
+    align-items: flex-start;
+    padding-top: 30px;
+  }
+  
+  .search-bar  {
+    position: absolute;
+    top: 88px;
+    width: 90% !important;
+    left: 5%;
+    padding: 0px !important;
+  }
+  
+  .logo {
+    padding-left: 11px;
+  }
+  
+  .user {
+    padding-right: 11px;
+  }
+  
+  .search {
+    height: 32px;
+    padding-left: 25px;
+  }
+  
+  .search::placeholder {
+    font-size: 13px;
+    color: #C8BCCA;
+  }
+  
+  #option {
+    -webkit-appearance: none; 
+    background: url(images/arrow-option.svg);
+    background-repeat: no-repeat;
+    background-position: 21px 0px;
+    border-radius: 10px 0px 0px 10px;
+    outline: none;
+    height: 32px;
+    padding: 7.5px 21px 7.5px 21px;
+    border: 1px solid rgba(73, 33, 77, 0.2);
+    background-color: #fff;
+    font-size: 18px;
+    width: 86px !important;
+    font-size: 11px;
+  }
+  
+  .search-icon {
+    background-color: #E266ED;
+    outline: none;
+    border: none;
+    padding: 4px 30px 0px 30px;
+    height: 32px;
+  }
+  
+  .search-icon img {
+    width: 14px;
+  }
+
+  .join-beta-btn {
+    margin-right: 11px;
+  }
+  
+}
+
+@media (max-width:400px) {
+  .search::placeholder {
+    font-size: 9px;
+  }
+
+  .join-beta-btn {
+    margin-right: 0px;
+  }
+}

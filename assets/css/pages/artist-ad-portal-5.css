@@ -1,0 +1,169 @@
+@import '../includes/_imports.css';
+
+/* Artist Ad Portal Section */
+.artist-ad-portal {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.artist-ad-portal .logo {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    display: block;
+    width: 52px;
+}
+
+.artist-ad-portal .logo img {
+    width: 100%;
+}
+
+.artist-ad-portal .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.artist-ad-portal .container .title {
+    margin-bottom: 50px;
+}
+
+.artist-ad-portal .container .title .mobile-v {
+    display: none;
+}
+
+.artist-ad-portal .container .box {
+    width: 635px;
+    padding: 60px 100px;
+    background: rgba(252, 247, 252, 0.6);
+    box-shadow: 2px 2px 26px #F79AFF;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.artist-ad-portal .container .box .box-top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.artist-ad-portal .container .box .box-top img {
+    width: 75px;
+    height: 75px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-right: 30px;
+}
+
+.artist-ad-portal .container .box .box-top .box-top-right h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #2D3748;
+    margin-bottom: 5px;
+}
+
+.artist-ad-portal .container .box .box-top .box-top-right p {
+    font-size: 17px;
+    color: #49214D;
+    opacity: 0.4;
+}
+
+.artist-ad-portal .container .box .info-box {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.artist-ad-portal .container .box .info-box:last-child {
+    margin-bottom: 0px;
+}
+
+.artist-ad-portal .container .box .info-box .progress-bar {
+    width: 100%;
+    height: 6px;
+    background: rgba(73, 33, 77, 0.08);
+    border-radius: 100px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.artist-ad-portal .container .box .info-box .progress-bar .progress-bar-percent {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    background: #F79AFF;
+    border-radius: 100px;
+}
+
+.artist-ad-portal .container .box .info-box h5 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #2D3748;
+}
+
+.artist-ad-portal .container .box .info-box p {
+    font-size: 16px;
+    color: #49214D;
+    opacity: 0.4;
+}
+
+/* Responsive */
+@media only screen and (max-width: 1480px) {
+    .artist-ad-portal .container .title {
+        margin-bottom: 30px;
+    }
+    
+    .artist-ad-portal .container .box {
+        padding: 30px 100px;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .artist-ad-portal .logo {
+        top: 25px;
+        left: 15px;
+        width: 40px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .artist-ad-portal .container .title {
+        margin-top: -20px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .artist-ad-portal .container .box {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 620px) {
+    .artist-ad-portal {
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+
+    .artist-ad-portal .container .box {
+        padding: 30px;
+    }
+
+    .artist-ad-portal .container .title {
+        display: flex;
+        justify-content: center;
+    }
+
+    .artist-ad-portal .container .title .desktop-v {
+        width: 85%;
+        height: auto;
+    }
+
+    .artist-ad-portal .container .box .box-top img {
+        margin-right: 20px;
+    }
+}

@@ -1,0 +1,234 @@
+@import "../includes/_imports.css";
+
+main {
+  width: 100%;
+  height: 100vh;
+  padding: 25px 25px 25px 50px;
+  background: var(--primary-color);
+  display: grid;
+  grid-template-columns: 325px auto;
+}
+
+/* Content Section */
+main .content {
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  border-radius: 48px;
+  overflow-y: scroll;
+}
+
+main .content::-webkit-scrollbar {
+  display: none;
+}
+
+main .content .content-bottom {
+  width: 100%;
+  padding: 0px 60px 60px 60px;
+}
+
+main .content .content-bottom h1 {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+main .content .content-bottom #streams-chart {
+  margin-left: -15px;
+  margin-bottom: 58px;
+}
+
+.apexcharts-legend.apexcharts-align-center.apx-legend-position-bottom {
+  inset: auto 0px -3px !important;
+}
+
+[seriesname="Fans"] {
+  margin-right: -10px !important;
+}
+
+main .content .content-bottom .promoted-content {
+  width: 100%;
+}
+
+main .content .content-bottom .promoted-content-top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+main .content .content-bottom .promoted-content-top h2 {
+  font-size: 26px;
+  font-weight: 600;
+}
+
+main .content .content-bottom .promoted-content-top button {
+  transition: all 0.3s ease;
+}
+
+main .content .content-bottom .promoted-content-top button:hover {
+  opacity: 0.6;
+}
+
+main .content .content-bottom .promoted-content-bottom {
+  width: 100%;
+}
+
+main .content .content-bottom .promoted-content-bottom .promoted-content-boxes {
+  width: 100%;
+}
+
+main
+  .content
+  .content-bottom
+  .promoted-content-bottom
+  .promoted-content-boxes
+  .promoted-content-box {
+  width: 100%;
+  height: fit-content;
+  border-radius: 20px;
+  position: relative;
+  font-size: 0px;
+}
+
+main
+  .content
+  .content-bottom
+  .promoted-content-bottom
+  .promoted-content-boxes
+  .promoted-content-box
+  img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+main
+  .content
+  .content-bottom
+  .promoted-content-bottom
+  .promoted-content-boxes
+  .promoted-content-box
+  .overlay {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+main
+  .content
+  .content-bottom
+  .promoted-content-bottom
+  .promoted-content-boxes
+  .promoted-content-box:hover
+  .overlay {
+  opacity: 1;
+}
+
+main
+  .content
+  .content-bottom
+  .promoted-content-bottom
+  .promoted-content-boxes
+  .promoted-content-box
+  .overlay
+  button {
+  transition: all 0.3s ease;
+}
+
+main
+  .content
+  .content-bottom
+  .promoted-content-bottom
+  .promoted-content-boxes
+  .promoted-content-box
+  .overlay
+  button:hover {
+  opacity: 0.8;
+}
+
+main
+  .content
+  .content-bottom
+  .promoted-content-bottom
+  .promoted-content-bottom-bottom {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+main
+  .content
+  .content-bottom
+  .promoted-content-bottom
+  .promoted-content-bottom-bottom
+  .control-btn {
+  min-width: 50px;
+  max-width: 50px;
+  height: 50px;
+  background: #f6f6f5;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+main
+  .content
+  .content-bottom
+  .promoted-content-bottom
+  .promoted-content-bottom-bottom
+  .control-btn:hover {
+  opacity: 0.6;
+}
+
+main
+  .content
+  .content-bottom
+  .promoted-content-bottom
+  .promoted-content-bottom-bottom
+  .prev-btn {
+  margin-right: 10px;
+}
+
+/* Responsive */
+@media only screen and (max-width: 1080px) {
+  main {
+    padding: 25px;
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  main .content {
+    border-radius: 30px;
+  }
+
+  main .content .content-bottom {
+    padding: 0px 30px 30px 30px;
+  }
+}
+
+@media only screen and (max-width: 568px) {
+  main {
+    padding: 10px;
+  }
+
+  main .content {
+    border-radius: 20px;
+  }
+
+  main .content .content-bottom .promoted-content-top h2 {
+      font-size: 18px;
+  }
+}

@@ -1,0 +1,133 @@
+@import '../includes/_imports.css';
+
+/* Artist Ad Portal Section */
+.artist-ad-portal {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.artist-ad-portal .logo {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    display: block;
+    width: 52px;
+}
+
+.artist-ad-portal .logo img {
+    width: 100%;
+}
+
+.artist-ad-portal .container {
+    display: flex;
+    justify-content: center;
+}
+
+.artist-ad-portal .container form {
+    width: 711px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.artist-ad-portal .container form .title {
+    margin-bottom: 20px;
+}
+
+.artist-ad-portal .container form p {
+    font-size: 22px;
+    font-weight: 500;
+    text-align: center;
+    color: #341B36;
+    opacity: 0.6;
+}
+
+.artist-ad-portal .container .inputs {
+    margin: 40px 0px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 35px;
+}
+
+.artist-ad-portal .container .inputs input {
+    width: 100%;
+    height: 100px;
+    border: 3px solid #F79AFF;
+    background: #FFF9FF;
+    border-radius: 10px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.artist-ad-portal .container form button {
+    width: 100%;
+    height: 60px;
+    border: 1px solid #F79AFF;
+    background: #F79AFF;
+    border-radius: 5px;
+    font-size: 22px;
+    color: #ffffff;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.artist-ad-portal .container form button:hover {
+    background: transparent;
+    color: #F79AFF;
+}
+
+/* Responsive */
+@media only screen and (max-width: 1300px) {
+    .artist-ad-portal .logo {
+        top: 25px;
+        left: 15px;
+        width: 40px;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .artist-ad-portal .container form {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .artist-ad-portal .container form .title {
+        margin-bottom: 0px;
+    }
+
+    .artist-ad-portal .container form p {
+        font-size: 17px;
+    }
+
+    .artist-ad-portal .container form p br {
+        display: none;
+    }
+    
+    .artist-ad-portal .container .inputs {
+        margin: 20px 0px;
+        grid-gap: 15px;
+    }
+
+    .artist-ad-portal .container .inputs input {
+        height: 70px;
+        border: 2px solid #F79AFF;
+        border-radius: 5px;
+        font-size: 26px;
+    }
+
+    .artist-ad-portal .container form button {
+        height: 42px;
+        font-size: 17px;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .artist-ad-portal .container .inputs input {
+        height: 55px;
+    }
+}

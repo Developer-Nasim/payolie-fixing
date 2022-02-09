@@ -1,0 +1,51 @@
+@import '../includes/_imports.css';
+
+/* Searching Section */
+.searching {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(#EA69FF, #B800E7);
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.searching .logo {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    display: block;
+    width: 52px;
+}
+
+.searching .logo img {
+    width: 100%;
+}
+
+.searching .container h1 {
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    color: #ffffff;
+}
+
+/* Responsive */
+@media only screen and (max-width: 1300px) {
+    .searching .logo {
+        top: 15px;
+        left: 15px;
+        width: 40px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .searching .container h1 {
+        font-size: 41px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .searching .container h1 {
+        font-size: 31px;
+    }
+}

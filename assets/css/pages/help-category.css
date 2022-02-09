@@ -1,0 +1,90 @@
+@import '../includes/_imports.css';
+
+/* Directory Section */
+.directory {
+    width: 100%;
+    height: 45px;
+    background: #FFF0F8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.directory .container {
+    overflow-x: scroll;
+}
+
+.directory .container::-webkit-scrollbar {
+    display: none;
+}
+
+.directory .container .directory-wrapper {
+    width: auto;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+}
+
+.directory .container .directory-wrapper a {
+    font-size: 16px;
+    color: #EF3DFF;
+    transition: all 0.3s ease;
+}
+
+.directory .container .directory-wrapper a:hover {
+    opacity: 0.6;
+}
+
+.directory .container .directory-wrapper i {
+    margin: 0px 20px;
+    font-size: 14px;
+    color: #E266ED;
+}
+
+/* Help Category Section */
+.help-category {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.help-category .container {
+    padding: 100px 0px;
+    border-bottom: 1px solid rgba(73, 33, 76, 0.1);
+}
+
+.help-category .container h2 {
+    font-size: 33px;
+    font-weight: 600;
+    color: #091E42;
+    margin-bottom: 50px;
+}
+
+.help-category .container .help-category-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.help-category .container .help-category-links a {
+    display: block;
+    width: fit-content;
+    font-size: 20px;
+    color: #505F79;
+    transition: all 0.3s ease;
+    margin-bottom: 30px;
+}
+
+.help-category .container .help-category-links a:last-child {
+    margin-bottom: 0px;
+}
+
+.help-category .container .help-category-links a:hover {
+   color: #EF3DFF;
+}
+
+/* Responsive */
+@media only screen and (max-width: 580px) {
+    .help-category .container {
+        padding: 50px 0px;
+    }
+}

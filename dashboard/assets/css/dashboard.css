@@ -1,0 +1,900 @@
+/*   Theme default css */
+ 
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500; 
+    color: #666666;
+    font-size: 16px; 
+}
+
+  
+button {
+  cursor: pointer; }
+
+a:focus,
+.button:focus {
+  text-decoration: none;
+  outline: none; }
+
+a:focus,
+a:hover {
+  color: inherit;
+  text-decoration: none; }
+
+a,
+button {
+  color: inherit;
+  outline: medium none; }
+
+button:focus, input:focus, input:focus, textarea, textarea:focus {
+  outline: 0; }
+
+ 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Poppins', sans-serif; 
+    margin-top: 0px; 
+    font-weight: 500; 
+ }
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  color: inherit; }
+
+h1 {
+  font-size: 40px;
+  font-weight: 500; }
+
+h2 {
+  font-size: 35px; }
+
+h3 {
+  font-size: 28px; }
+
+h4 {
+  font-size: 22px; }
+
+h5 {
+  font-size: 18px; }
+
+h6 {
+  font-size: 16px; }
+
+ul {
+  margin: 0px;
+  padding: 0px; }
+
+li {
+  list-style: none; }
+
+ .padding{
+   padding-right: 0;
+ }
+.tblData{
+    width: 100%;
+    overflow: auto;
+} 
+
+ /* default-css END 
+================================== */
+ 
+
+
+
+
+/* Setting page css START */
+
+
+/* Side-bar css  */
+.streaming-area {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background: #EEF2F5;
+    min-height: 100vh;
+}
+
+.streaming-area aside {
+    min-width: 380px;
+    max-width: 380px;
+    background: #fff;
+    position: relative;
+    transition: .3s;
+}
+.streaming-area  aside.show{
+    left: 0;
+}
+.streaming-area .layout {
+    width: 80%;
+}
+
+.siteWrp {
+    padding: 50px;
+}
+
+.siteWrp a.logo {
+    display: block; 
+    margin-bottom: 60px;
+    width: max-content;
+}
+
+.siteWrp  h5 {
+    font-size: 24px;
+}
+
+.siteWrp ul {
+    display: block;
+    margin-top: 20px;
+}
+
+.siteWrp ul li {
+    display: block;
+} 
+
+.siteWrp ul li a {
+    position: relative;
+    display: flex;
+    width: 100%;
+    padding: 18px 26px;
+    background: transparent;
+    transition: .3s;
+    align-items: center;
+}
+.siteWrp ul li a::after{
+    content: "";
+    width: 8px;
+    height: 100%;
+    position: absolute;
+    left: -50px;
+    top: 0;
+    background: #E366EE;
+    border-radius: 26px;
+    transition: .3s;
+    opacity: 0;
+}
+.siteWrp ul li a:hover:after,
+.siteWrp ul li a.active:after{
+    opacity: 1;
+}
+.siteWrp ul li a:hover,
+.siteWrp ul li a.active {
+    background: #E366EE1A;
+    border-radius: 10px;
+    color: #E885F1;
+}
+
+.siteWrp ul li a span {
+    margin-right: 17px;
+}
+.siteWrp ul li a span svg path {fill: #B9BBD2;}
+
+.siteWrp ul li a:hover span svg path,
+.siteWrp ul li a.active span svg path {
+    fill: #E885F1;
+}
+
+
+/* Header start */
+
+ 
+
+.dashboard_header {
+    padding: 30px 0;
+}
+form.dashboard-header-search {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 60px;
+    background: #F9FAFC;
+    border-radius: 100px;
+}
+
+form.dashboard-header-search input {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: none;
+    padding: 20px;
+    font-size: 16px;
+}
+
+form.dashboard-header-search button {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    border: none;
+    background: no-repeat;
+    padding: 0;
+    font-size: 20px;
+    color: #5E5D7D;
+}
+
+.dashboard-header-actions {
+    text-align: right;
+}
+
+.dashboard-header-actions ul {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.dashboard-header-actions ul > li a {
+    display: block;
+    position: relative;
+}
+
+.dashboard-header-actions ul li a span {
+    position: absolute;
+    background: #E266ED;
+    width: 18px;
+    height: 18px;
+    font-size: 12px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    top: -5px;
+    right: -10px;
+    z-index: 2;
+}
+
+.dashboard-header-actions ul li a i {
+    font-size: 20px;
+    color: #49214D;
+}
+
+.dashboard-header-actions ul > li {
+    position: relative;
+    margin-left: 35px;
+}
+
+.dashboard-header-actions ul > li a.notif:after {
+    position: absolute;
+    top: 0;
+    right: 2px;
+    content: "";
+    width: 6px;
+    height: 6px;
+    background: #E266ED;
+    z-index: 2;
+    border-radius: 50%;
+}
+
+.dashboard-header-actions ul > li a.avater {
+    width: 27px;
+    height: 27px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 1px solid #E266ED;
+    margin-top: -5px;
+}
+
+.dashboard-header-actions ul > li a.avater img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.streaming-data {
+    margin-top: 40px;
+    margin-bottom: 60px;
+}
+
+h3.block-title {
+    font-size: 28px;
+    line-height: 42px; 
+    color: #CDC9C9;
+}
+.streaming-data table {
+    width: 100%;
+}
+
+.streaming-data table thead tr th {
+    font-weight: 500;
+    font-size: 18px; 
+    color: #848BA7;
+    padding: 20px;
+    padding-bottom: 60px;
+    position: relative;
+}
+
+.streaming-data table thead tr th:first-child {
+    padding-left: 45px;
+}
+.streaming-data table thead tr th::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 30px;
+    left: 0;
+    background: #E3E7E9;;
+}
+.streaming-data table tbody tr td {
+    background: #fff;
+    border-bottom: 10px solid #eef2f5;
+    color: #F9B2FF;
+    padding: 10px 20px;
+}
+
+.streaming-data table tbody tr td:last-child {
+    padding-left: 100px;
+}
+.streaming-data table tbody tr td:first-child {
+    font-size: 20px;
+    font-weight: 700;
+    color: #000000;
+    padding-left: 50px;
+    padding-right: 0;
+}
+.strmInfo {
+    display: flex;
+    align-items: center;
+}
+
+.strmInfo img {
+    width: 65px;
+    height: 67px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+
+.strmDetails h4 {
+    font-size: 18px;
+    line-height: 27px; 
+    color: #000000;
+    margin-bottom: 0;
+}
+
+.strmDetails p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 21px; 
+    color: #848BA7;
+}
+
+.strmDetails p span {
+    font-size: 12px;
+    line-height: 15px; 
+    color: #FFFFFF;
+    background: #F9B3FF;
+    padding: 2px 10px;
+    border-radius: 10px;
+    margin-left: 5px;
+}
+.streaming-data h3.block-title {
+    margin-bottom: 40px;
+}
+.layout .container-fluid {
+    padding: 0 50px;
+}
+.dashHeadLeft {
+    display: flex;
+    align-items: center;
+}
+
+button.asideMenuBtn {border: none;transition: .3s;background: none;display: none;}
+
+.dashHeadLeft button.asideMenuBtn {
+    font-size: 30px;
+    margin-right: 15px;
+}
+
+aside .siteWrp button.asideMenuBtn {
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    font-size: 30px;
+}
+
+button.asideMenuBtn:hover {
+    opacity: .5;
+}
+button.search_popup_btn {
+    border: none;
+    background: #f9fafc;
+    min-width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: .3s;
+    display: none;
+}
+
+button.search_popup_btn:hover {
+    color: #f9fafc;
+    background: #727373;
+}
+
+
+
+/* Streaming Page end and Account Setting page START */
+
+
+.account-setting-wrp .allSettingsWrps {
+    display: flex;
+}
+
+.account-setting-wrp .allSettingsWrps .inps {
+    width: 100%;
+}
+
+.account-setting-wrp .allSettingsWrps .avaters_upload {
+    min-width: 250px;
+    max-width: 250px;
+    overflow: hidden;
+    margin-left: 80px;
+    margin-top: 30px;
+}
+.avaters_upload img {
+    display: block;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.avaters_upload label {
+    margin: 0;
+    width: 100%;
+    display: flex;
+    position: relative;
+    height: 48px;
+    background: #E5E7EB;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.avaters_upload label input#file {
+    display: none;
+}
+
+.avaters_upload label:hover {
+    background: white;
+    color: #000;
+}
+.account-setting-wrp .inps label {
+    display: block;
+    width: 100%;
+    margin-bottom: 30px;
+    line-height: 16px; 
+    color: #2D3748;
+}
+
+.account-setting-wrp .inps label input {
+    width: 100%;
+    display: block;
+    border: none;
+    background: rgba(52, 27, 54, 0.05);
+    border-radius: 5px;
+    height: 60px;
+    padding: 10px;
+    margin-top: 15px;
+    font-size: 15px;
+}
+
+.account-setting-wrp .bottomBtns {
+    display: flex;
+    align-items: center;
+}
+
+.account-setting-wrp .bottomBtns button {
+    background: #E885F1;
+    border-radius: 9px;
+    border: none;
+    padding: 15px 30px;
+    text-transform: capitalize;
+    transition: .3s;
+    color: #fff;
+}
+
+.account-setting-wrp .bottomBtns button.inactive {
+    color: rgba(138, 138, 138, 0.87);
+    background: #DCDADC;
+    margin-right: 15px;
+}
+
+
+
+/* Account setting page end and Checkout page css started */
+
+
+
+/* The ckb */
+.ckb {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .ckb input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .ckb:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .ckb input:checked ~ .checkmark {
+    background-color: #2196F3;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .ckb input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .ckb .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+/* The rdo */
+.rdo {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default radio button */
+  .rdo input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  /* Create a custom radio button */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .rdo:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the radio button is checked, add a blue background */
+  .rdo input:checked ~ .checkmark {
+    background-color: #2196F3;
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .rdo input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .rdo .checkmark:after {
+       top: 9px;
+      left: 9px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: white;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Big screen :1200px. */
+@media (min-width: 1200px) and (max-width: 1500px) {
+
+
+}
+ 
+/* Normal screen :992px. */
+@media (min-width: 992px) and (max-width: 1200px) {
+    .streaming-area aside {
+        min-width: 280px;
+        max-width: 280px; 
+    }
+    .siteWrp {
+        padding: 50px 20px;
+    }
+    .siteWrp ul li a::after { 
+        left: -20px; 
+    }
+    .layout .container-fluid {
+        padding: 0 15px;
+    }
+    .streaming-data table thead tr th { 
+        font-size: 15px; 
+        padding: 10px;
+        padding-bottom: 40px; 
+    }
+
+.streaming-data table thead tr th:first-child {
+    padding-left: 28px;
+}
+    .streaming-data table tbody tr td {
+        border-bottom: 8px solid #eef2f5;
+        color: #F9B2FF;
+        padding: 10px 10px;
+        font-size: 15px;
+    }
+
+.streaming-data table tbody tr td:first-child {
+    padding-left: 30px;
+}
+
+.streaming-data table tbody tr td:last-child {
+    padding-left: 60px;
+}
+    .strmDetails h4 {
+        font-size: 16px;  
+    }
+    .siteWrp ul li a { 
+        padding: 15px 10px; 
+    }
+    .siteWrp ul li a span {
+        margin-right: 10px;
+    }
+
+
+
+
+
+}
+  
+/* Tablet screen :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+    .streaming-area .layout{
+        width: 100%;
+    }
+    button.asideMenuBtn{
+        display: block;
+    }
+    .streaming-area aside {
+        position: fixed;
+        top: 0;
+        left: -350px;
+        z-index: 99;
+        min-width: 300px;
+        max-width: 300px;
+        min-height: 100vh;
+        overflow: auto; 
+    }
+    .siteWrp ul li a { 
+        padding: 15px 15px; 
+    }
+    .siteWrp {
+        padding: 50px 30px;
+    }
+    .siteWrp ul li a::after { 
+        width: 6px; 
+        left: -30px; 
+    }
+    .layout .container-fluid {
+        padding: 0 15px;
+    }
+    .streaming-data table thead tr th { 
+        font-size: 15px; 
+        padding: 10px;
+        padding-bottom: 40px; 
+    }
+    .streaming-data table tbody tr td { 
+        border-bottom: 8px solid #eef2f5;
+        color: #F9B2FF;
+        padding: 10px 10px;
+        font-size: 15px;
+    }
+    .strmDetails h4 {
+        font-size: 16px;  
+    }
+    .siteWrp ul li a { 
+        padding: 15px 10px; 
+    }
+    .siteWrp ul li a span {
+        margin-right: 10px;
+    }
+
+
+}
+ 
+/* small screen :320px. */
+@media (max-width: 767px) {
+    .streaming-area .layout{
+        width: 100%;
+    }
+    button.asideMenuBtn{
+        display: block;
+    }
+    .streaming-area aside {
+        position: fixed;
+        top: 0;
+        left: -350px;
+        z-index: 99;
+        min-width: 300px;
+        max-width: 300px;
+        min-height: 100vh;
+        overflow: auto; 
+    }
+    .siteWrp ul li a { 
+        padding: 15px 15px; 
+    }
+    .siteWrp {
+        padding: 50px 30px;
+    }
+    .siteWrp ul li a::after { 
+        width: 6px; 
+        left: -30px; 
+    }
+    .layout .container-fluid {
+        padding: 0 15px;
+    }
+    .streaming-data table thead tr th { 
+        font-size: 15px; 
+        padding: 10px;
+        padding-bottom: 30px; 
+    }
+    .streaming-data table tbody tr td { 
+        border-bottom: 8px solid #eef2f5;
+        color: #F9B2FF;
+        padding: 10px 10px;
+        font-size: 15px;
+    }
+    .strmDetails h4 {
+        font-size: 16px;  
+    }
+    .siteWrp ul li a { 
+        padding: 15px 10px; 
+    }
+    .siteWrp ul li a span {
+        margin-right: 10px;
+    }
+    button.search_popup_btn{
+        display: block;
+    }
+    .dashboard_header {
+        padding: 15px 0;
+    }
+    .streaming-data .tblData table {
+        min-width: 700px;
+    }
+    .streaming-data table thead tr th::after { 
+        bottom: 18px; 
+    }
+    .streaming-data h3.block-title { 
+        text-align: center;
+    }
+    .account-setting-wrp .allSettingsWrps {
+        flex-direction: column;
+        max-width: 500px;
+        margin: auto;
+    }
+    .account-setting-wrp .allSettingsWrps .inps {
+        order: 2;
+    }
+
+    .account-setting-wrp .allSettingsWrps .avaters_upload {
+        margin: auto; 
+        margin-bottom: 40px;
+    }
+    .account-setting-wrp .bottomBtns button { 
+        border-radius: 4px; 
+        padding: 10px 12px; 
+    }
+    .account-setting-wrp .inps label input { 
+        border-radius: 5px;
+        height: 45px; 
+        margin-top: 10px;
+        font-size: 15px;
+    }
+    .account-setting-wrp .bottomBtns { 
+        justify-content: center;
+    }
+
+
+    
+
+}
+ 
+/* Large Mobile screen :480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+.container {width:450px}
+ 
+}
+
+
+
+

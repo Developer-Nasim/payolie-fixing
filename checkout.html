@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Important SEO Meta Tags -->
+    <meta property="og:site_name" content="#" />
+	<meta property="og:url" content="#">
+    <meta name="title" content="#">
+    <meta property="og:title" content="#">
+    <meta name="description" content="#">
+	<meta property="og:description" content="#">
+
+    <!-- Icons -->
+    <link rel="shortcut icon" href="./assets/images/brand/icon-primary.svg" type="image/svg">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Fontawesome -->
+    <link href="https://kit-pro.fontawesome.com/releases/v5.15.1/css/pro.min.css" rel="stylesheet">
+
+    <!-- Css Main Files -->
+    <link rel="stylesheet" href="./assets/css/pages/checkout.css">
+    
+    <title>Checkout - Payolie</title>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navigation-bar-v3">
+        <div class="container">
+            <div class="navigation-bar-left">
+                <a href="./" class="logo">
+                    <img src="./assets/images/brand/logo-primary.svg" alt="">
+                </a>
+            </div>
+
+            <form action="">
+                <div class="select">
+                    <select required>
+                        <option value="All">All</option>
+                    </select>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+
+                <input type="text" placeholder="Search" required>
+
+                <button>
+                    <i class="far fa-search"></i>
+                </button>
+            </form>
+
+            <div class="navigation-bar-right">
+                <div class="cart">
+                    <button class="cart-btn">
+                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.58301 17.5C5.39134 17.5 4.42717 18.475 4.42717 19.6666C4.42717 20.8583 5.39134 21.8333 6.58301 21.8333C7.77467 21.8333 8.74967 20.8583 8.74967 19.6666C8.74967 18.475 7.77467 17.5 6.58301 17.5ZM0.0830078 1.24996C0.0830078 1.84579 0.570508 2.33329 1.16634 2.33329H2.24967L6.14967 10.5558L4.68717 13.1991C3.89634 14.6508 4.93634 16.4166 6.58301 16.4166H18.4997C19.0955 16.4166 19.583 15.9291 19.583 15.3333C19.583 14.7375 19.0955 14.25 18.4997 14.25H6.58301L7.77468 12.0833H15.8455C16.658 12.0833 17.373 11.6391 17.7413 10.9675L21.6197 3.93663C22.0205 3.22163 21.5005 2.33329 20.6772 2.33329H4.64384L3.91801 0.784126C3.74467 0.404959 3.35467 0.166626 2.94301 0.166626H1.16634C0.570508 0.166626 0.0830078 0.654126 0.0830078 1.24996V1.24996ZM17.4163 17.5C16.2247 17.5 15.2605 18.475 15.2605 19.6666C15.2605 20.8583 16.2247 21.8333 17.4163 21.8333C18.608 21.8333 19.583 20.8583 19.583 19.6666C19.583 18.475 18.608 17.5 17.4163 17.5Z" fill="#49214D"/>
+                        </svg>
+                    </button>
+
+                    <div class="cart-quantity">
+                        <p>6</p>
+                    </div>
+                </div>
+
+                <div class="notification">
+                    <span class="active"></span>
+                    <svg width="18" height="22" viewBox="0 0 18 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.99993 21.8334C10.1916 21.8334 11.1666 20.8584 11.1666 19.6667H6.83327C6.83327 20.8584 7.79743 21.8334 8.99993 21.8334ZM15.4999 15.3334V9.91671C15.4999 6.59087 13.7233 3.80671 10.6249 3.07004V2.33337C10.6249 1.43421 9.8991 0.708374 8.99993 0.708374C8.10077 0.708374 7.37493 1.43421 7.37493 2.33337V3.07004C4.26577 3.80671 2.49993 6.58004 2.49993 9.91671V15.3334L1.10243 16.7309C0.419934 17.4134 0.8966 18.5834 1.86077 18.5834H16.1283C17.0924 18.5834 17.5799 17.4134 16.8974 16.7309L15.4999 15.3334Z" fill="#49214D"/>
+                    </svg>                        
+                </div>
+
+                <div class="user">
+                    <img src="./assets/images/users/1.png" alt="">
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Directory Section -->
+    <section class="directory">
+        <div class="container">
+            <div class="directory-wrapper">
+                <a href="">Home</a>
+                <i class="far fa-chevron-right"></i>
+                <a href="">About</a>
+                <i class="far fa-chevron-right"></i>
+                <a href="">Artist-Commerce Ads</a>
+                <i class="far fa-chevron-right"></i>
+                <a href="">Shop</a>
+                <i class="far fa-chevron-right"></i>
+                <a href="">Help</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Checkout Section -->
+    <section class="checkout">
+        <div class="container">
+            <div class="checkout-left">
+                <div class="checkout-left-top">
+                    <h2>Shopping Cart</h2>
+                    <h3>6 Items</h3>
+                </div>
+
+                <div class="title-row">
+                    <div class="title-row-left">
+                        <p>Product Details</p>
+                    </div>
+                
+                    <div class="title-row-right">
+                        <p>Quantity</p>
+                        <p>Price</p>
+                    </div>
+                </div>
+
+                <div class="cart-items">
+                    <div class="cart-item">
+                        <div class="cart-item-left">
+                            <img src="./assets/images/pages/checkout/checkout-img-1.png" alt="">
+                        </div>
+
+                        <div class="cart-item-right">
+                            <div class="cart-item-right-left">
+                                <h4>Windows Office Word</h4>
+                                <button>Remove</button>
+                            </div>
+
+                            <div class="cart-item-right-right">
+                                <div class="quantity">
+                                    <button>-</button>
+                                    <p>1</p>
+                                    <button>+</button>
+                                </div>
+
+                                <p class="price">$12.99</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cart-item">
+                        <div class="cart-item-left">
+                            <img src="./assets/images/pages/checkout/checkout-img-1.png" alt="">
+                        </div>
+
+                        <div class="cart-item-right">
+                            <div class="cart-item-right-left">
+                                <h4>Windows Office Word</h4>
+                                <button>Remove</button>
+                            </div>
+
+                            <div class="cart-item-right-right">
+                                <div class="quantity">
+                                    <button>-</button>
+                                    <p>1</p>
+                                    <button>+</button>
+                                </div>
+
+                                <p class="price">$12.99</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cart-item">
+                        <div class="cart-item-left">
+                            <img src="./assets/images/pages/checkout/checkout-img-1.png" alt="">
+                        </div>
+
+                        <div class="cart-item-right">
+                            <div class="cart-item-right-left">
+                                <h4>Windows Office Word</h4>
+                                <button>Remove</button>
+                            </div>
+
+                            <div class="cart-item-right-right">
+                                <div class="quantity">
+                                    <button>-</button>
+                                    <p>1</p>
+                                    <button>+</button>
+                                </div>
+
+                                <p class="price">$12.99</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cart-item">
+                        <div class="cart-item-left">
+                            <img src="./assets/images/pages/checkout/checkout-img-1.png" alt="">
+                        </div>
+
+                        <div class="cart-item-right">
+                            <div class="cart-item-right-left">
+                                <h4>Windows Office Word</h4>
+                                <button>Remove</button>
+                            </div>
+
+                            <div class="cart-item-right-right">
+                                <div class="quantity">
+                                    <button>-</button>
+                                    <p>1</p>
+                                    <button>+</button>
+                                </div>
+
+                                <p class="price">$12.99</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cart-item">
+                        <div class="cart-item-left">
+                            <img src="./assets/images/pages/checkout/checkout-img-1.png" alt="">
+                        </div>
+
+                        <div class="cart-item-right">
+                            <div class="cart-item-right-left">
+                                <h4>Windows Office Word</h4>
+                                <button>Remove</button>
+                            </div>
+
+                            <div class="cart-item-right-right">
+                                <div class="quantity">
+                                    <button>-</button>
+                                    <p>1</p>
+                                    <button>+</button>
+                                </div>
+
+                                <p class="price">$12.99</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cart-item">
+                        <div class="cart-item-left">
+                            <img src="./assets/images/pages/checkout/checkout-img-1.png" alt="">
+                        </div>
+
+                        <div class="cart-item-right">
+                            <div class="cart-item-right-left">
+                                <h4>Windows Office Word</h4>
+                                <button>Remove</button>
+                            </div>
+
+                            <div class="cart-item-right-right">
+                                <div class="quantity">
+                                    <button>-</button>
+                                    <p>1</p>
+                                    <button>+</button>
+                                </div>
+
+                                <p class="price">$12.99</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="checkout-right">
+                <div class="saved-payment-options-box">
+                    <div class="saved-payment-options-box-top">
+                        <h3>Saved payment options</h3>
+                    </div>
+
+                    <div class="saved-payment-options-box-bottom">
+                        <div class="radio"></div>
+
+                        <svg width="34" height="24" viewBox="0 0 34 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="0.5" y="0.5" width="33" height="23" rx="3.5" fill="white" stroke="#D9D9D9"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.751 15.8579H8.69129L7.14674 9.79198C7.07343 9.51295 6.91776 9.26627 6.68879 9.15001C6.11737 8.85784 5.4877 8.62531 4.80078 8.50804V8.2745H8.11886C8.57681 8.2745 8.92026 8.62531 8.97751 9.03274L9.77891 13.4083L11.8376 8.2745H13.8401L10.751 15.8579ZM14.985 15.8579H13.0398L14.6415 8.2745H16.5868L14.985 15.8579ZM19.1035 10.3753C19.1607 9.96689 19.5042 9.73335 19.9049 9.73335C20.5346 9.67471 21.2205 9.79199 21.7929 10.0832L22.1364 8.45042C21.5639 8.21688 20.9343 8.09961 20.3628 8.09961C18.4748 8.09961 17.101 9.15002 17.101 10.6078C17.101 11.7169 18.0741 12.2992 18.761 12.65C19.5042 12.9998 19.7904 13.2334 19.7332 13.5832C19.7332 14.1079 19.1607 14.3414 18.5893 14.3414C17.9024 14.3414 17.2155 14.1665 16.5868 13.8743L16.2433 15.5081C16.9303 15.7992 17.6734 15.9165 18.3603 15.9165C20.4773 15.9741 21.7929 14.9247 21.7929 13.3496C21.7929 11.3661 19.1035 11.2498 19.1035 10.3753ZM28.6008 15.8579L27.0562 8.2745H25.3972C25.0537 8.2745 24.7103 8.50804 24.5958 8.85784L21.7356 15.8579H23.7381L24.1378 14.7498H26.5983L26.8273 15.8579H28.6008ZM25.6834 10.3167L26.2548 13.1747H24.653L25.6834 10.3167Z" fill="#172B85"/>
+                        </svg>
+
+                        <p>Ending in •••• 4186</p>
+                    </div>
+                </div>
+
+                <div class="more-payment-options">
+                    <p>More payment options</p>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+
+                <div class="more-payment-options-content">
+                    <div class="payment-options-box">
+                        <div class="payment-options-box-top">
+                            <h3>Payment options</h3>
+                        </div>
+    
+                        <div class="payment-options-box-bottom">
+                            <div class="payment-option">
+                                <div class="radio" data-val="paypal"></div>
+    
+                                <svg width="34" height="24" viewBox="0 0 34 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="0.5" y="0.5" width="33" height="23" rx="3.5" fill="white" stroke="#D9D9D9"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10.751 15.8579H8.69129L7.14674 9.79198C7.07343 9.51295 6.91776 9.26627 6.68879 9.15001C6.11737 8.85784 5.4877 8.62531 4.80078 8.50804V8.2745H8.11886C8.57681 8.2745 8.92026 8.62531 8.97751 9.03274L9.77891 13.4083L11.8376 8.2745H13.8401L10.751 15.8579ZM14.985 15.8579H13.0398L14.6415 8.2745H16.5868L14.985 15.8579ZM19.1035 10.3753C19.1607 9.96689 19.5042 9.73335 19.9049 9.73335C20.5346 9.67471 21.2205 9.79199 21.7929 10.0832L22.1364 8.45042C21.5639 8.21688 20.9343 8.09961 20.3628 8.09961C18.4748 8.09961 17.101 9.15002 17.101 10.6078C17.101 11.7169 18.0741 12.2992 18.761 12.65C19.5042 12.9998 19.7904 13.2334 19.7332 13.5832C19.7332 14.1079 19.1607 14.3414 18.5893 14.3414C17.9024 14.3414 17.2155 14.1665 16.5868 13.8743L16.2433 15.5081C16.9303 15.7992 17.6734 15.9165 18.3603 15.9165C20.4773 15.9741 21.7929 14.9247 21.7929 13.3496C21.7929 11.3661 19.1035 11.2498 19.1035 10.3753ZM28.6008 15.8579L27.0562 8.2745H25.3972C25.0537 8.2745 24.7103 8.50804 24.5958 8.85784L21.7356 15.8579H23.7381L24.1378 14.7498H26.5983L26.8273 15.8579H28.6008ZM25.6834 10.3167L26.2548 13.1747H24.653L25.6834 10.3167Z" fill="#172B85"/>
+                                </svg>
+        
+                                <p>Paypal</p>
+                            </div>
+
+                            <div class="payment-option">
+                                <div class="radio" data-val="credit-and-debit"></div>
+    
+                                <svg width="78" height="24" viewBox="0 0 78 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="0.5" y="0.5" width="33" height="23" rx="3.5" fill="white" stroke="#D9D9D9"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M17.179 16.8297C15.9949 17.8278 14.459 18.4303 12.7807 18.4303C9.03582 18.4303 6 15.4306 6 11.7303C6 8.02997 9.03582 5.03027 12.7807 5.03027C14.459 5.03027 15.9949 5.63277 17.179 6.63081C18.363 5.63277 19.8989 5.03027 21.5773 5.03027C25.3221 5.03027 28.358 8.02997 28.358 11.7303C28.358 15.4306 25.3221 18.4303 21.5773 18.4303C19.8989 18.4303 18.363 17.8278 17.179 16.8297Z" fill="#ED0006"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M17.1797 16.8297C18.6376 15.6008 19.5621 13.7722 19.5621 11.7303C19.5621 9.68832 18.6376 7.85972 17.1797 6.63081C18.3637 5.63277 19.8996 5.03027 21.578 5.03027C25.3228 5.03027 28.3587 8.02997 28.3587 11.7303C28.3587 15.4306 25.3228 18.4303 21.578 18.4303C19.8996 18.4303 18.3637 17.8278 17.1797 16.8297Z" fill="#F9A000"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M17.1793 16.8297C18.6372 15.6008 19.5616 13.7722 19.5616 11.7303C19.5616 9.68835 18.6372 7.85976 17.1793 6.63086C15.7213 7.85976 14.7969 9.68835 14.7969 11.7303C14.7969 13.7722 15.7213 15.6008 17.1793 16.8297Z" fill="#FF5E00"/>
+                                    <rect x="44.5" y="0.5" width="33" height="23" rx="3.5" fill="white" stroke="#D9D9D9"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M54.751 15.8579H52.6913L51.1467 9.79198C51.0734 9.51295 50.9178 9.26627 50.6888 9.15001C50.1174 8.85784 49.4877 8.62531 48.8008 8.50804V8.2745H52.1189C52.5768 8.2745 52.9203 8.62531 52.9775 9.03274L53.7789 13.4083L55.8376 8.2745H57.8401L54.751 15.8579ZM58.985 15.8579H57.0398L58.6415 8.2745H60.5868L58.985 15.8579ZM63.1035 10.3753C63.1607 9.96689 63.5042 9.73335 63.9049 9.73335C64.5346 9.67471 65.2205 9.79199 65.7929 10.0832L66.1364 8.45042C65.5639 8.21688 64.9343 8.09961 64.3628 8.09961C62.4748 8.09961 61.101 9.15002 61.101 10.6078C61.101 11.7169 62.0741 12.2992 62.761 12.65C63.5042 12.9998 63.7904 13.2334 63.7332 13.5832C63.7332 14.1079 63.1607 14.3414 62.5893 14.3414C61.9024 14.3414 61.2155 14.1665 60.5868 13.8743L60.2433 15.5081C60.9303 15.7992 61.6734 15.9165 62.3603 15.9165C64.4773 15.9741 65.7929 14.9247 65.7929 13.3496C65.7929 11.3661 63.1035 11.2498 63.1035 10.3753ZM72.6008 15.8579L71.0562 8.2745H69.3972C69.0537 8.2745 68.7103 8.50804 68.5958 8.85784L65.7356 15.8579H67.7381L68.1378 14.7498H70.5983L70.8273 15.8579H72.6008ZM69.6834 10.3167L70.2548 13.1747H68.653L69.6834 10.3167Z" fill="#172B85"/>
+                                </svg>
+        
+                                <p>Credit & Debit cards</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="credit-debit-card-form">
+                    <div class="input-group">
+                        <label>Card number</label>
+                        <input type="number" placeholder="•••• •••• •••• ••••">
+                    </div>
+
+                    <div class="inputs-group">
+                        <div class="input-group">
+                            <label>Expiration date</label>
+                            <input type="text" placeholder="MM/YY">
+                        </div>
+
+                        <div class="input-group">
+                            <label>Security Code</label>
+                            <input type="text" placeholder="••••">
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label>First name</label>
+                        <input type="text" placeholder="Yaakoub">
+                    </div>
+
+                    <div class="input-group">
+                        <label>Last name</label>
+                        <input type="text" placeholder="El Hbari">
+                    </div>
+
+                    <div class="save-as-default-input-group">
+                        <div class="checkbox">
+                            <i class="far fa-check"></i>
+                        </div>
+
+                        <p>Save as default</p>
+                    </div>
+                </div>
+
+                <div class="order-summary-box order-summary-box-1 active">
+                    <h3>Order Summary</h3>
+
+                    <div class="row">
+                        <p>Items</p>
+                        <p>$51.96</p>
+                    </div>
+
+                    <div class="row">
+                        <p>Shipping</p>
+                        <p>$0.00</p>
+                    </div>
+
+                    <div class="divider"></div>
+
+                    <div class="row">
+                        <p>Total before tax</p>
+                        <p>$51.96</p>
+                    </div>
+
+                    <div class="row">
+                        <p>Estimated tax to be collected</p>
+                        <p>$51.96</p>
+                    </div>
+
+                    <div class="divider"></div>
+
+                    <div class="row last-row">
+                        <h4>Order total</h4>
+                        <h4>$51.96</h4>
+                    </div>
+
+                    <button class="primary-btn">Pay</button>
+                    <button class="secondary-btn">Stream to Pay</button>
+                </div>
+
+                <div class="order-summary-box order-summary-box-2">
+                    <h3>Order Summary</h3>
+
+                    <div class="row">
+                        <p>Items</p>
+                        <p>$51.96</p>
+                    </div>
+
+                    <div class="row">
+                        <p>Shipping</p>
+                        <p>$0.00</p>
+                    </div>
+
+                    <div class="divider"></div>
+
+                    <div class="row">
+                        <p>Total before tax</p>
+                        <p>$51.96</p>
+                    </div>
+
+                    <div class="row">
+                        <p>Estimated tax to be collected</p>
+                        <p>$51.96</p>
+                    </div>
+
+                    <div class="divider"></div>
+
+                    <div class="row last-row">
+                        <h4>Order total</h4>
+                        <h4>$51.96</h4>
+                    </div>
+
+                    <button class="paypal-btn">PayPal Checkout</button>
+                    <button class="secondary-btn">Get this for free</button>
+                </div>
+
+                <div class="order-summary-box order-summary-box-3">
+                    <h3>Order Summary</h3>
+
+                    <div class="row">
+                        <p>Items</p>
+                        <p>$51.96</p>
+                    </div>
+
+                    <div class="row">
+                        <p>Shipping</p>
+                        <p>$0.00</p>
+                    </div>
+
+                    <div class="divider"></div>
+
+                    <div class="row">
+                        <p>Total before tax</p>
+                        <p>$51.96</p>
+                    </div>
+
+                    <div class="row">
+                        <p>Estimated tax to be collected</p>
+                        <p>$51.96</p>
+                    </div>
+
+                    <div class="divider"></div>
+
+                    <div class="row last-row">
+                        <h4>Order total</h4>
+                        <h4>$51.96</h4>
+                    </div>
+
+                    <button class="primary-btn">Pay</button>
+                    <button class="secondary-btn">Get this for free</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Js Lib Files -->
+    <script src="./assets/libs/jquery/jquery.min.js"></script>
+
+    <!-- Js Main Files -->
+    <script src="./assets/js/pages/checkout.js"></script>
+    
+</body>
+</html>

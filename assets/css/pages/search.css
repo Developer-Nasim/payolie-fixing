@@ -1,0 +1,130 @@
+@import '../includes/_imports.css';
+
+/* Search Section */
+.search {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.search .logo {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    display: block;
+    width: 52px;
+}
+
+.search .logo img {
+    width: 100%;
+}
+
+.search .container {
+    display: flex;
+    justify-content: center;
+}
+
+.search .container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search .container form .title {
+    margin-bottom: 30px;
+}
+
+.search .container form .title .mobile-v {
+    display: none;
+}
+
+.search .container form .input-group {
+    width: 715px;
+    height: fit-content;
+    background: #ffffff;
+    box-shadow: 2px 2px 20px #F9B2FF;
+    border-radius: 12px;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.search .container form .input-group input {
+    width: 100%;
+    height: 82px;
+    padding: 0px 30px;
+    padding-right: 95px;
+    font-size: 22px;
+    color: #2D3748;
+}
+
+.search .container form .input-group button {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background: #F9B2FF;
+    border-radius: 50%;
+    font-size: 16px;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.search .container form .input-group button:hover {
+    background: var(--primary-color);
+}
+
+.search .container form a {
+    font-size: 17px;
+    text-align: center;
+    text-decoration: underline;
+    color: #989898;
+}
+
+.search .container form a:hover {
+    text-decoration: none;
+}
+
+/* Responsive */
+@media only screen and (max-width: 1300px) {
+    .search .logo {
+        top: 15px;
+        left: 15px;
+        width: 40px;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .search .container form {
+        width: 100%;
+    }
+
+    .search .container form .title .desktop-v {
+        display: none;
+    }
+
+    .search .container form .title .mobile-v {
+        display: block;
+    }
+
+    .search .container form .input-group {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 415px) {
+    .search .container form .title .mobile-v {
+        width: 100% !important;
+    }
+
+    .search .container form .input-group {
+        margin-bottom: 20px;
+    }
+
+    .search .container form a {
+        font-size: 13px;
+    }
+}

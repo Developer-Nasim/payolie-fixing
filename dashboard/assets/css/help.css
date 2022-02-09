@@ -1,0 +1,936 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+}
+
+/* Header */
+
+.header {
+    background-color: #FCF7FC;
+    height: 136px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    height: 136px;
+    align-items: center;
+}
+
+.search-bar {
+    width: 100%;
+    padding-left: 90px;
+    padding-right: 50px;
+}
+
+.search {
+    height: 80px;
+    border: none;
+    width: 100%;
+    height: 70px;
+    outline: none;
+    padding-left: 25px;
+    font-size: 18px;
+}
+
+::placeholder {
+    font-size: 18px;
+    color: #C8BCCA;
+}
+
+#option {
+    border-radius: 10px 0px 0px 10px;
+    outline: none;
+    height: 70px;
+    padding: 21px 15px 21px 30px;
+    border: 1px solid rgba(73, 33, 77, 0.2);
+    color: #49214D;
+    font-size: 18px;
+}
+
+.search-icon {
+    background-color: #E266ED;
+    outline: none;
+    border: none;
+    padding: 27px;
+    height: 70px;
+    border-radius: 0px 10px 10px 0px;
+    cursor: pointer;
+}
+
+.search-bar form {
+    display: flex;
+}
+
+.user {
+    display: flex;
+}
+
+.bell-container {
+    position: relative;
+}
+
+.bell-circle {
+    width: 6px;
+    height: 6px;
+    background-color: #E266ED;
+    border-radius: 100px;
+    position: absolute;
+    top: 5%;
+    left: 53%;
+}
+
+.user-img {
+    border: 1px solid #E266ED;
+    border-radius: 26px;
+    width: 26px;
+    margin-left: 30px;
+}
+
+.notification {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.cart-container {
+    position: relative;
+    margin-right: 30px;
+}
+
+.cart-notification {
+    width: 18px;
+    height: 18px;
+    background-color: #E266ED;
+    color: #FCF7FC;
+    text-align: center;
+    border-radius: 18px;
+    font-size: 10px;
+    position: absolute;
+    top: -20%;
+    right: -40%;
+}
+
+#option {
+    -webkit-appearance: none; 
+    background: url(images/arrow-option.svg);
+    background-repeat: no-repeat;
+    background-position: 44px 19px;
+    border-radius: 10px 0px 0px 10px;
+    outline: none;
+    height: 70px;
+    padding: 21px 15px 21px 30px;
+    border: 1px solid rgba(73, 33, 77, 0.2);
+    background-color: #fff;
+    font-size: 18px;
+    width: 119px !important;
+  }
+
+
+select::-ms-expand {
+    display: none;
+}
+
+option {
+    background: #ffffff;
+}
+
+.payolie-help-search {
+    width: 61%;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+
+
+.payolie-help-search-icon {
+    border-radius: 10px 0px 0px 10px !important;
+}
+
+.join-beta-btn {
+    font-size: 16px;
+    color: #E266ED;
+    border-radius: 5px;
+    padding: 8px 25px;
+    border: 1px solid #E266ED;
+    text-decoration: none;
+}
+
+.payolie-help-input {
+    border-radius: 10px;
+}
+
+
+/* Help 1 */
+
+.payolie-help-active {
+    background: linear-gradient(110.92deg, #CA5CD4 0%, #612966 106.26%) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+}
+
+.payolie-help-one-section {
+    margin: 60px 0 80px 0;
+}
+
+.payolie-help-one-heading h4 {
+    color: #091E42;
+    font-size: 33px;
+    font-weight: 600;margin-bottom: 50px;
+}
+
+.payolie-help-one-heading ul {
+    list-style: none;
+}
+
+.payolie-help-one-heading ul li {
+    margin-bottom: 30px;
+}
+
+.payolie-help-one-heading ul li a {
+    color: #505F79;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+
+/* Help 2 */
+
+.payolie-help-two {
+    display: flex;
+    flex-direction: row ;
+}
+
+.payolie-help-two-section {
+    margin: 60px 0 80px 0;
+}
+
+.payolie-help-two-left-content {
+    width: 40%;
+    border-right: 1px solid #0000002e;
+    padding-right: 25px;
+}
+
+
+.question {
+    margin-bottom: 30px;
+}
+
+.question-title {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.question-title p {
+    font-size: 22px;
+    font-weight: 500;
+    color: #091E42;
+}
+
+.question-btn {
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.question-btn p{
+    display: inline;
+}
+
+.question-btn img{
+    padding: 0 20px;
+    transition: 0.3s ease;
+}
+
+.show-text .question-btn img{
+    transform: rotate(180deg);
+}
+
+.question-text {
+    display: none;
+}
+
+.question-text ul {
+    list-style: none;
+    margin-left: 20px;
+    margin-bottom: 50px;
+}
+
+.question-text ul li {
+    margin-top: 30px;
+    font-size: 20px;
+    color: #505F79;
+    cursor: pointer;
+}
+
+.show-right-content .btn__s {
+    background-color: #F4F5F7;
+    padding: 14px 0px;
+    width: 90%;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.show-text .question-text {
+    display: inline;
+}
+
+/* Right Heading */
+
+.payolie-help-two-right-content {
+    width: 58%;
+    margin-left: 9%;
+    position: relative !important;
+}
+
+
+.payolie-help-right-heading {
+    color: #091E42;
+    font-size: 33px;
+    font-weight: 900;
+}
+
+.right-content {
+    position: absolute;
+    top: 260px;
+    left: 43.7%;
+    width: 33%;
+    display: none;
+}
+
+.right-content h4 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #253858;
+    padding: 40px 0 15px 0;
+}
+
+.right-content p {
+    font-size: 20px;
+    color: #505F79;
+    padding-bottom: 40px;
+}
+
+.right-content h5 {
+    font-size: 22px;
+    color: #253858;
+    font-weight: 600;
+    padding-bottom: 25px;
+}
+
+.show-right-content .right-content {
+    display: inline;
+}
+
+
+
+
+
+@media(min-width: 1350px) {
+    .help-navbar {
+        padding: 0 88px;
+    } 
+    .payolie-help-breadcrumb {
+        padding-left: 88px;
+        padding-right: 88px;
+    }
+
+    .payolie-help-one-heading {
+        padding-left: 88px;
+        padding-right: 88px;
+    }
+
+    .payolie-help-two {
+        padding-left: 88px;
+        padding-right: 88px;
+    }
+}
+
+/* Breadcrumb Slider */
+.slider-main-container {
+    position: relative !important;
+    height: 71px;
+    background-color: #fff !important;
+  
+  }
+  
+  .slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow: scroll;
+    background-color: #ffffff !important;
+  }
+  
+  .slider-inner {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    top: 0;
+    left: 0;
+    width: 860px;
+    height: 100%;
+    cursor: auto !important;
+    background-color: #fff !important;
+  }
+  
+  @media (min-width: 1350px) {
+    .slider-inner {
+      margin: 0 80px 0 80px!important;
+    }
+  }
+  
+  .progress-bar {
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    height: 5px;
+    width: 100%;
+    background-color: #fff !important;
+  }
+  
+  .prog-bar-inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #fff !important;
+  }
+  
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .slider::-webkit-scrollbar {
+    display: none;
+    background-color: #ffffff !important;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .slider {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    background-color: #ffffff !important;
+  }
+  
+  .main-carousel .track {
+    position: absolute;
+    top: 28px;
+    left: 0px;
+    display: inline-flex;
+    touch-action: none;
+    background-color: #fff !important;
+  }
+  
+  .card {
+    background-color: #fff !important;
+    border-radius: 3px;
+  }
+  
+  .card a {
+      display: flex;
+      color: #49214D;
+      font-size: 18px;
+      text-decoration: none;
+      margin-right: 18px;
+      background-color: #ffffff !important;
+  }
+  
+  .card img {
+      margin-left: 18px;
+  }
+  
+  
+  @media (min-width: 1000px) {
+    .slider-main-container {
+      position: relative !important;
+      height: 71px;
+      background-color: #fff !important;
+    }
+  
+    .slider-inner {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        background-color: #fff !important;
+    }
+  
+    .card img {
+        width: 20px;
+    } 
+  
+  
+    .slider {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      overflow: scroll;
+      background-color: #fff !important;
+    }
+  
+    .slider {
+      height: 100%;
+      width: 100%;
+      overflow: hidden !important;
+      background-color: #fff !important;
+    }
+  }
+  
+  @media (max-width: 767px) {
+
+      /* Help 2 */
+
+      .question-title p {
+        font-size: 14px;
+    }
+
+    .question-text ul li {
+        font-size: 12px;
+        margin-top: 20px;
+    }
+
+    .payolie-help-right-heading {
+        font-size: 18px;
+    }
+
+    .right-content h4 {
+        font-size: 12px;
+    }
+
+    .right-content p {
+        font-size: 11px;
+    }
+
+    .payolie-help-logo {
+        width: 140px !important;
+    } 
+
+    .card a {
+        font-size: 16px;
+    }
+  }
+  
+ 
+  
+  @media (max-width: 1181px) {
+    .payolie-help-logo {
+      width: 200px;
+    }
+  }
+  
+  @media (max-width: 1019px) {
+    .payolie-help-logo {
+      width: 180px;
+    }
+  
+    .join-beta-btn {
+      font-size: 14px;
+      padding: 6px 20px;
+    }
+  
+    .payolie-help-input {
+      height: 55px;
+    }
+  
+    .payolie-help-search-icon {
+      height: 55px !important;
+      padding: 19px !important;
+    }
+  
+    .payolie-help-search-icon img {
+      width: 16px;
+    }
+  }
+  
+  @media (max-width: 912px) {
+    .payolie-help-logo {
+      width: 158px;
+    }
+  
+    .join-beta-btn {
+      font-size: 14px;
+      padding: 6px 18px;
+    }
+  
+    .payolie-help-search {
+      padding-left: 10px !important;
+      padding-right: 10px !important;
+    }
+  
+  }
+  
+  @media (max-width: 781px) {
+    .payolie-help-logo {
+      width: 140px;
+    }
+
+    .payolie-help-search {
+      padding-left: 8px !important;
+      padding-right: 8px !important;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .navbar {
+      align-items: flex-start;
+      padding-top: 30px;
+    }
+  
+    .search-bar {
+      position: absolute;
+      top: 88px;
+      width: 90% !important;
+      left: 5%;
+      padding: 0px !important;
+    }
+  
+    .logo {
+      padding-left: 11px;
+    }
+  
+    .user {
+      padding-right: 11px;
+    }
+  
+    .search {
+      height: 32px;
+      padding-left: 25px;
+    }
+
+input.search.payolie-help-input {
+    height: 42px;
+}
+  
+    .search::placeholder {
+      font-size: 13px;
+      color: #c8bcca;
+    }
+  
+    #option {
+      -webkit-appearance: none;
+      background: url(images/arrow-option.svg);
+      background-repeat: no-repeat;
+      background-position: 21px 0px;
+      border-radius: 10px 0px 0px 10px;
+      outline: none;
+      height: 32px;
+      padding: 7.5px 21px 7.5px 21px;
+      border: 1px solid rgba(73, 33, 77, 0.2);
+      background-color: #fff;
+      font-size: 18px;
+      width: 86px !important;
+      font-size: 11px;
+    }
+  
+    .search-icon {
+      background-color: #e266ed;
+      outline: none;
+      border: none;
+      padding: 4px 27px 0px 27px !important;
+      height: 32px !important;
+    }
+
+button.search-icon.payolie-help-search-icon {height: 43px !important;}
+  
+    .search-bar {
+      height: 32px !important;
+    }
+  
+    .payolie-help-search {
+      height: 32px !important;
+    }
+
+.search-bar.payolie-help-search {
+    margin: -9px 0;
+}
+  
+    .search-icon img {
+      width: 14px;
+    }
+  
+    .join-beta-btn {
+      margin-right: 11px;
+    }
+
+    .payolie-help-logo {
+        width: 158px;
+      }
+  }
+
+  @media (max-width: 537px) {
+    .payolie-help-logo {
+        width: 180px;
+    }
+
+    .payolie-help-one-heading h4 {
+        font-size: 22px;
+    }
+
+    .payolie-help-one-heading ul li a {
+        font-size: 16px;
+    }
+  }
+  
+  
+  @media (max-width: 400px) {
+    .search::placeholder {
+      font-size: 9px;
+    }
+  
+    .join-beta-btn {
+      margin-right: 0px;
+    }
+  }
+  
+
+  @media (max-width: 403px) {
+    .payolie-help-logo {
+        width: 140px !important;
+    }
+}
+
+
+
+/********** footer Total Styling ************/
+#footer {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    justify-content: space-between;
+    padding: 110px 88px 88px 88px;
+    font-size: 20px;
+    line-height: 29px;
+    letter-spacing: 0.018em;
+  }
+  #footer ul {
+    list-style: none;
+  }
+  #footer ul li {
+    margin-bottom: 22px;
+  }
+  #footer a {
+    text-decoration: none;
+    color: #a98fa5;
+  }
+  .footer-head {
+    font-weight: 500;
+    color: #49214d !important;
+    margin-bottom: 40px;
+  }
+  /**********copyrights************/
+  #copyright {
+    background: #fdf7fc;
+    padding: 39px 0 42px 88px;
+  }
+  .copyright-main {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+  }
+  #copyright a {
+    text-decoration: none;
+    color: #49214d;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 29px;
+    margin-right: 40px;
+  }
+  #copyright p {
+    color: #49214d;
+    opacity: 0.5;
+    font-size: 20px;
+    line-height: 29px;
+    margin: 0;
+  }
+  
+  @media screen and (min-width: 1600px) {
+    .container-main {
+      width: 85% !important;
+      margin: 0 auto !important;
+    }
+  }
+  @media screen and (min-width: 1920px) {
+    .container-main {
+      width: 70% !important;
+      margin: 0 auto !important;
+    }
+  }
+  
+  
+  @media screen and (max-width: 767px) {
+    /*************Main Container**************/
+    .container-main {
+      width: 90% !important;
+      margin: 0 auto !important;
+    }
+    /**************footer***************/
+    .footer-main {
+      background-color: #fdf7fc;
+    }
+    #footer {
+      grid-template-columns: 1fr;
+      grid-row-gap: 15px;
+      justify-content: space-between;
+      padding: 40px 20px 18px 0px;
+    }
+    #footer ul li {
+      margin-bottom: 10px;
+      font-size: 14px;
+    }
+    .footer-head {
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+    .footer-head {
+      display: flex;
+      justify-content: space-between;
+  }
+    /**************Copyrights***************/
+    #copyright {
+      background-color: #ffffff;
+      padding: 10px 0;
+    }
+    #copyright a {
+      /* font-size: 14px;
+    margin-right: 20px; */
+      display: none;
+    }
+    #copyright p {
+      font-size: 12px;
+      margin: 0;
+    }
+    #copyright span {
+      cursor: pointer;
+      text-decoration: underline;
+    }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1350px) {
+    /*************Main Container**************/
+    .container-main {
+      width: 95%;
+      margin: 0 auto;
+    }
+  
+    /**************footer***************/
+    .footer-main {
+      background-color: #fdf7fc;
+    }
+    #footer {
+      /* grid-template-columns: auto auto auto; */
+      padding: 80px 0 58px 0;
+      grid-row-gap: 2em;
+    }
+    #footer ul li {
+      margin-bottom: 10px;
+      /* font-size: 12px; */
+    }
+    .footer-head {
+      /* font-size: 12px; */
+      margin-bottom: 22px;
+    }
+    /**************Copyrights***************/
+    #copyright {
+      background-color: #ffffff;
+      padding: 20px 0;
+    }
+  }
+  
+
+  /* Styling for toggle btn footer */
+
+  .footer-head img  {
+      display: none;
+  }
+
+
+  @media (max-width: 767px) {
+      .footer-head {
+          display: flex;
+          justify-content: space-between;
+      }
+
+      .footer-head img {
+          display: inline;
+          width: 10px;
+          cursor: pointer;
+      }
+
+      .footer-nav-links {
+          width: 0px;
+      }
+
+      .footer-toggle-container {
+         display: none;
+    }
+
+    .show-toggle-container {
+        display: block; 
+    } 
+
+    .rotate-footer-btn {
+        transform: rotate(180deg);
+    }
+    #footer {
+      border-top: 1px solid #49214d59;
+      border-bottom: 1px solid #49214d59;
+    }
+  }
+
+  .payolie-help-input {
+    border-radius: 0px 10px 10px 0px !important;
+  }
+
+
+
+ 
+  .bread-main-cont{
+    background-color: #fff0f8 !important;
+  }
+  .slider{
+    background-color: #FFF0F8 !important;
+  }
+
+.bread-main-cont .slider {
+    border-radius: unset;
+    background: no-repeat;
+}
+  .slider-inner{
+    background-color: #FFF0F8 !important;
+  }
+  .card{
+    background-color: #FFF0F8 !important;
+  }
+  .card a{
+    color: #EF3DFF;
+    background-color: #FFF0F8 !important;
+  }
+
+  @media only screen and (max-width: 1024px) {
+    .payolie-help-two {
+      display: block;
+    }
+    .payolie-help-two-left-content {
+      width: 100%;
+    }
+    .right-content {
+      position: static;
+    }
+    .payolie-help-right-heading {
+      margin-top: 40px;
+    }
+  }

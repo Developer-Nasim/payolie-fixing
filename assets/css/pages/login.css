@@ -1,0 +1,180 @@
+@import '../includes/_imports.css';
+
+/* login Section */
+.login {
+    width: 100%;
+    min-height: 100vh;
+    background: url('../../images/pages/login/login-img-1.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.login .logo {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    display: block;
+    width: 52px;
+}
+
+.login .logo img {
+    width: 100%;
+}
+
+.login .container {
+    display: flex;
+    justify-content: center;
+}
+
+.login .container form {
+    padding: 70px;
+    background: transparent;
+    border: 5px solid rgba(255, 255, 255, 0.1);
+    background: rgba(0, 0, 0, 0.45);
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login .container form h1 {
+    font-size: 25px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.login .container form h1 {
+    margin-bottom: 50px;
+}
+
+.login .container form .input-group {
+    width: 100%;
+    width: 400px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.login .container form .input-group label {
+    display: block;
+    font-size: 14px;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.login .container form .input-group input {
+    width: 100%;
+    height: 50px;
+    padding: 0px 15px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.login .container form .input-group .show-password-btn {
+    position: absolute;
+    top: calc(50% + 16px);
+    right: 15px;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #F882BF;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+}
+
+.login .container form .input-group .show-password-btn.active {
+    opacity: 1;
+}
+
+.login .container form .form-btn {
+    width: 100%;
+    height: 50px;
+    border: 1px solid #F882BF;
+    background: #F882BF;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.login .container form .form-btn:hover {
+    background: transparent;
+    color: #F882BF;
+}
+
+.login .container form .forgot-password {
+    margin-top: -10px;
+    width: 100%;
+    font-size: 16px;
+    color: #F882BF;
+    text-decoration: underline;
+    margin-bottom: 20px;
+}
+
+.login .container form .forgot-password:hover {
+    text-decoration: none;
+}
+
+.login .container form p {
+    width: 100%;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.login .container form p a {
+    color: #F882BF;
+    text-decoration: underline;
+}
+
+.login .container form p a:hover {
+    text-decoration: none;
+}
+
+/* Responsive */
+@media only screen and (max-width: 1300px) {
+    .login .container form {
+        padding: 30px;
+    }
+    
+    .login .container form h1 {
+        margin-bottom: 10px;
+    }
+
+    .login .container form .input-group {
+        margin-bottom: 10px;
+    }
+
+    .login .container form .input-group input {
+        height: 40px;
+    }
+
+    .login .container form .form-btn {
+        height: 40px;
+    }
+
+    .login .container form .forgot-password {
+        margin-top: 0px;
+        font-size: 14px;
+    }
+
+    .login .container form p {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    .login .container form {
+        width: 100%;
+    }
+
+    .login .container form .input-group {
+        width: 100%;
+    }
+}

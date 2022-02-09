@@ -1,0 +1,325 @@
+@import '../includes/_imports.css';
+
+/* Hero Section */
+.hero {
+    width: 100%;
+    height: 750px;
+    background: url('../../images/pages/help/hero-img-1.png');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero .container h1 {
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 60px;
+}
+
+.hero .container form {
+    width: fit-content;
+    height: 80px;
+    background: rgba(255, 255, 255, 0.14);
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+}
+
+.hero .container form span {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    opacity: 0.4;
+}
+
+.hero .container form input {
+    width: 550px;
+    height: 100%;
+    padding: 0px 50px 0px 80px;
+    font-size: 22px;
+    color: #ffffff;
+}
+
+.hero .container form input::placeholder {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.hero .container form button {
+    width: 158px;
+    height: 100%;
+    background: #ffffff;
+    font-size: 22px;
+    font-weight: 500;
+    color: #E266ED;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.hero .container form button:hover {
+    opacity: 0.9;
+}
+
+/* Tabs Section */
+.tabs {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.tabs .container {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid rgba(73, 33, 76, 0.15);
+}
+
+.tabs .container a {
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    height: 112px;
+    font-size: 22px;
+    color: #000000;
+    position: relative;
+    transition: all 0.3s ease;
+    margin-right: 50px;
+}
+
+.tabs .container a:hover {
+    color: var(--primary-color);
+}
+
+.tabs .container a:last-child {
+    margin-right: 0px;
+}
+
+.tabs .container a.active {
+    border-bottom: 2px solid #49214C;
+}
+
+/* Topics Section */
+.topics {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.topics .container {
+    padding-bottom: 100px;
+    border-bottom: 1px solid rgba(73, 33, 76, 0.15);
+    margin-bottom: 100px;
+}
+
+.topics .container h2 {
+    font-size: 30px;
+    font-weight: 600;
+    color: #000000;
+    margin-bottom: 70px;
+}
+
+.topics .container .topic-boxes {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+}
+
+.topics .container .topic-boxes .topic-box {
+    width: 100%;
+    padding: 50px 0px;
+    border: 1px solid rgba(73, 33, 77, 0.18);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.topics .container .topic-boxes .topic-box:hover {
+    border-color: var(--primary-color);
+}
+
+.topics .container .topic-boxes .topic-box svg {
+    margin-bottom: 40px;
+}
+
+.topics .container .topic-boxes .topic-box p {
+    font-size: 20px;
+    text-align: center;
+    color: #000000;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+}
+
+.topics .container .topic-boxes .topic-box:hover p {
+    color: var(--primary-color);
+}
+
+/* Help Categories Section */
+.help-categories {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.help-categories .container {
+    padding-bottom: 100px;
+    border-bottom: 1px solid rgba(73, 33, 76, 0.15);
+    margin-bottom: 100px;
+}
+
+.help-categories.last-help-categories .container {
+    margin-bottom: 0px;
+}
+
+.help-categories .container h2 {
+    font-size: 30px;
+    font-weight: 600;
+    color: #000000;
+    margin-bottom: 70px;
+}
+
+.help-categories .container .help-categories-wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px 80px;
+}
+
+.help-categories .container .help-categories-wrapper .category {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.help-categories .container .help-categories-wrapper .category h3 {
+    font-size: 24px;
+    font-weight: 500;
+    color: #49214D;
+    margin-bottom: 20px;
+}
+
+.help-categories .container .help-categories-wrapper .category a {
+    display: block;
+    width: fit-content;
+    color: #000000;
+    font-size: 20px;
+    font-weight: 300;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.help-categories .container .help-categories-wrapper .category a:hover {
+    color: var(--primary-color);
+}
+
+.help-categories .container .help-categories-wrapper .category a:last-child {
+    margin-bottom: 0px;
+}
+
+/* Responsive */
+
+/* Responsive (Hero Section) */
+@media only screen and (max-width: 1024px) {
+    .hero {
+        height: fit-content;
+        padding: 150px 0px;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    .hero .container form {
+        width: 100%;
+        height: fit-content;
+        flex-direction: column;
+    }
+
+    .hero .container form span {
+        height: 60px;
+    }
+
+    .hero .container form input {
+        width: 100%;
+        height: 60px;
+    }
+
+    .hero .container form button {
+        width: 100%;
+        height: 60px;
+    }
+}
+
+/* Responsive (Tabs Section) */
+@media only screen and (max-width: 580px) {
+    .tabs {
+        margin-bottom: 50px;
+    }
+}
+
+/* Responsive (Topics Section) */
+@media only screen and (max-width: 1050px) {
+    .topics .container .topic-boxes {
+        grid-template-columns: repeat(2, 1fr);
+    }   
+}
+
+@media only screen and (max-width: 580px) {
+    .topics .container {
+        padding-bottom: 50px;
+        margin-bottom: 50px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .topics .container h2 {
+        margin-bottom: 40px;
+    }
+}
+
+@media only screen and (max-width: 410px) {
+    .topics .container .topic-boxes {
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+    }   
+}
+
+/* Help Categories Section */
+@media only screen and (max-width: 1024px) {
+    .help-categories .container .help-categories-wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .help-categories .container .help-categories-wrapper {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    .help-categories .container {
+        padding-bottom: 50px;
+        margin-bottom: 50px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .help-categories .container h2 {
+        margin-bottom: 40px;
+    }
+}
