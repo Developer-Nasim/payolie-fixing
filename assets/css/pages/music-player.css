@@ -165,7 +165,11 @@
     transition: all 0.3s ease;
     opacity: 0;
 }
-
+.music-player .container .box .box-top .box-top-part-3 .main-player .range-input-group p span {
+    display: block;
+    margin-right: -18px;
+    width: max-content;
+}
 .music-player .container .box .box-top .box-top-part-3 .main-player .range-input-group input {
     -webkit-appearance: none;
     width: 100%;
@@ -276,7 +280,8 @@
 }
 
 .music-player .container .box .box-bottom .bottom-btns button {
-    font-size: 14px;
+    /* font-size: 14px; */
+    font-size: 12px;
     color: var(--primary-color);
 }
 
