@@ -356,6 +356,47 @@ main .content .content-wrapper .content-left .content-left-bottom .transaction-l
     opacity: 0.8;
 }
 
+
+
+.widthdrawal {
+    display: flex;
+    align-items: center;
+    padding: 5px 0;
+}
+
+.widthdrawal .transaction-left {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.widthdrawal h4 {
+    margin-bottom: 0;
+    width: max-content;
+}
+
+.widthdrawal span {
+    display: block;
+    width: max-content;
+}
+.transaction-list .table {
+    overflow: hidden;
+}
+
+.transaction-list .table .table-bottom {
+    max-height: unset !important;
+    height: auto;
+    overflow: hidden;
+}
+
+.transaction-list .table .table-bottom > .row {
+    padding: 10px 0px !important; 
+}
+.title-row .checkbox {
+    position: relative;
+}
+
+
 /* Responsive */
 @media only screen and (max-width: 1280px) {
     main .content .content-wrapper .content-left .content-left-top .crypto-list {
@@ -421,6 +462,29 @@ main .content .content-wrapper .content-left .content-left-bottom .transaction-l
         grid-template-columns: 1fr;
         grid-gap: 10px;
     }
+    main .content .content-wrapper .transaction-list .table .row, 
+    main .content .content-wrapper .transaction-list .table .title-row{
+        grid-template-columns: 10px 1fr 1fr !important;
+    }
+    /* .title-row .checkbox:after {
+        content: "Export data";
+        position: absolute;
+        left: 30px;
+        text-transform: capitalize;
+        font-weight: 600;
+        width: max-content;
+    } */
+
+
+
+
+
+
+
+
+
+
+
 }
 
 @media only screen and (max-width: 520px) {
@@ -458,3 +522,7 @@ main .content .content-wrapper .content-left .content-left-bottom .transaction-l
         text-align: left;
     }
 }
+
+
+
+ 
