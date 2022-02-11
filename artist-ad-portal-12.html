@@ -35,7 +35,7 @@
 <body>
 
     <!-- Artist Ad Portal Section -->
-    <section class="artist-ad-portal">
+    <section class="artist-ad-portal portal-12">
         <a href="./" class="logo">
             <img src="./assets/images/brand/icon-primary-light.svg" alt="">
         </a>
@@ -53,7 +53,7 @@
                 </div>
                 
                 <p>Pick up to 5 artists</p>
-                <div class="boxes-wrapper">
+                <!-- <div class="boxes-wrapper">
                     <div class="box" onclick="this.classList.toggle('active');">
                         <img src="./assets/images/pages/artist-ad-portal/img-4.svg" alt="">
                         <h3>Lil Wayne</h3>
@@ -83,8 +83,8 @@
                         <img src="./assets/images/pages/artist-ad-portal/img-4.svg" alt="">
                         <h3>Lil Wayne</h3>
                     </div>
-                </div>
-                <!-- <div class="boxes-wrapper owl-carousel owl-theme"> 
+                </div> -->
+                <div class="boxes-wrapper owl-carousel owl-theme"> 
                     <a href="#one" class="box" onclick="this.classList.toggle('active');" data-hash="one">
                         <img src="./assets/images/pages/artist-ad-portal/img-4.svg" alt="">
                         <h3>Lil Wayne</h3>
@@ -108,11 +108,7 @@
                     <a href="#six" class="box" onclick="this.classList.toggle('active');" data-hash="six">
                         <img src="./assets/images/pages/artist-ad-portal/img-4.svg" alt="">
                         <h3>Lil Wayne</h3>
-                    </a> 
-
-
-
-                    
+                    </a>  
                     <a href="#seven" class="box" onclick="this.classList.toggle('active');" data-hash="seven">
                         <img src="./assets/images/pages/artist-ad-portal/img-4.svg" alt="">
                         <h3>Lil Wayne</h3>
@@ -137,7 +133,7 @@
                         <img src="./assets/images/pages/artist-ad-portal/img-4.svg" alt="">
                         <h3>Lil Wayne</h3>
                     </a> 
-                </div> -->
+                </div> 
                   
             </form>
         </div>
@@ -165,10 +161,12 @@
     <script>
         $(document).ready(function() {
             $('.owl-carousel').owlCarousel({
+                stagePadding: 30,
                 items: 4,
                 loop: false,
                 center: true,
                 margin: 10,
+                autoplay:false,
                 callbacks: true,
                 URLhashListener: true,
                 autoplayHoverPause: true,
@@ -176,11 +174,12 @@
                 responsive : {
                 // breakpoint from 0 up
                 0 : {
-                    items : 1,
+                    items : 1, 
+                    stagePadding: 60,
                 },
                 // breakpoint from 480 up
                 480 : {
-                    items : 1,
+                    items : 2, 
                 },
                 // breakpoint from 768 up
                 768 : {
@@ -188,7 +187,7 @@
                 },
                 // breakpoint from 768 up
                 1200 : {
-                    items : 3,
+                    items : 4,
                 }
             }
             });

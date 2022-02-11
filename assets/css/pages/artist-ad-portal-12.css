@@ -187,6 +187,68 @@
     display: none;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+section.artist-ad-portal.portal-12 .container {
+    width: 100%;
+    display: block;
+    max-width: 100%;
+}
+
+section.artist-ad-portal.portal-12 .container form.box {
+    width: 100%;
+}
+
+section.artist-ad-portal.portal-12 .container .boxes-wrapper {
+    display: flex;
+    grid-gap: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Responsive */
 @media only screen and (max-width: 1350px) {
     .artist-ad-portal .bottom-btns {
@@ -235,8 +297,8 @@
 
     .artist-ad-portal .container .boxes-wrapper {
         width: 100%;
-        padding-left: 26vw;
-        padding-right: 26vw;
+        /* padding-left: 26vw; */
+        /* padding-right: 26vw; */
         display: flex;
         overflow-x: scroll;
     }
