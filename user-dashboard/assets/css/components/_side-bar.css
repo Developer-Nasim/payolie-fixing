@@ -242,15 +242,15 @@
     }
 
     .side-bar .side-bar-top .logo {
-        margin-bottom: 84px;
-        margin-bottom: 170px;
+        /* margin-bottom: 84px;
+        margin-bottom: 170px; */
     }
 
     .side-bar .side-bar-close-trigger {
-        top: 74px;
+        top: 60px;
     }
 
     .side-bar .side-bar-top ul {
-        height: 64px;
+        /* height: 64px; */
     }
 }

@@ -25,6 +25,8 @@
     <!-- Fontawesome -->
     <link href="https://kit-pro.fontawesome.com/releases/v5.15.1/css/pro.min.css" rel="stylesheet">
 
+    <!-- Owl carousel -->
+    <link rel="stylesheet" href="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.carousel.min.css">
     <!-- Css Main Files -->
     <link rel="stylesheet" href="./assets/css/pages/artist-ad-portal-12.css">
     
@@ -51,7 +53,6 @@
                 </div>
                 
                 <p>Pick up to 5 artists</p>
-
                 <div class="boxes-wrapper">
                     <div class="box" onclick="this.classList.toggle('active');">
                         <img src="./assets/images/pages/artist-ad-portal/img-4.svg" alt="">
@@ -83,6 +84,61 @@
                         <h3>Lil Wayne</h3>
                     </div>
                 </div>
+                <!-- <div class="boxes-wrapper owl-carousel owl-theme"> 
+                    <a href="#one" class="box" onclick="this.classList.toggle('active');" data-hash="one">
+                        <img src="./assets/images/pages/artist-ad-portal/img-4.svg" alt="">
+                        <h3>Lil Wayne</h3>
+                    </a> 
+                    <a href="#two" class="box" onclick="this.classList.toggle('active');" data-hash="two">
+                        <img src="./assets/images/pages/artist-ad-portal/img-4.svg" alt="">
+                        <h3>Lil Wayne</h3>
+                    </a> 
+                    <a href="#three" class="box" onclick="this.classList.toggle('active');" data-hash="three">
+                        <img src="./assets/images/pages/artist-ad-portal/img-4.svg" alt="">
+                        <h3>Lil Wayne</h3>
+                    </a> 
+                    <a href="#four" class="box" onclick="this.classList.toggle('active');" data-hash="four">
+                        <img src="./assets/images/pages/artist-ad-portal/img-4.svg" alt="">
+                        <h3>Lil Wayne</h3>
+                    </a> 
+                    <a href="#five" class="box" onclick="this.classList.toggle('active');" data-hash="five">
+                        <img src="./assets/images/pages/artist-ad-portal/img-4.svg" alt="">
+                        <h3>Lil Wayne</h3>
+                    </a> 
+                    <a href="#six" class="box" onclick="this.classList.toggle('active');" data-hash="six">
+                        <img src="./assets/images/pages/artist-ad-portal/img-4.svg" alt="">
+                        <h3>Lil Wayne</h3>
+                    </a> 
+
+
+
+                    
+                    <a href="#seven" class="box" onclick="this.classList.toggle('active');" data-hash="seven">
+                        <img src="./assets/images/pages/artist-ad-portal/img-4.svg" alt="">
+                        <h3>Lil Wayne</h3>
+                    </a> 
+                    <a href="#eight" class="box" onclick="this.classList.toggle('active');" data-hash="eight">
+                        <img src="./assets/images/pages/artist-ad-portal/img-4.svg" alt="">
+                        <h3>Lil Wayne</h3>
+                    </a> 
+                    <a href="#nine" class="box" onclick="this.classList.toggle('active');" data-hash="nine">
+                        <img src="./assets/images/pages/artist-ad-portal/img-4.svg" alt="">
+                        <h3>Lil Wayne</h3>
+                    </a> 
+                    <a href="#ten" class="box" onclick="this.classList.toggle('active');" data-hash="ten">
+                        <img src="./assets/images/pages/artist-ad-portal/img-4.svg" alt="">
+                        <h3>Lil Wayne</h3>
+                    </a> 
+                    <a href="#eleven" class="box" onclick="this.classList.toggle('active');" data-hash="eleven">
+                        <img src="./assets/images/pages/artist-ad-portal/img-4.svg" alt="">
+                        <h3>Lil Wayne</h3>
+                    </a> 
+                    <a href="#twelve" class="box" onclick="this.classList.toggle('active');" data-hash="twelve">
+                        <img src="./assets/images/pages/artist-ad-portal/img-4.svg" alt="">
+                        <h3>Lil Wayne</h3>
+                    </a> 
+                </div> -->
+                  
             </form>
         </div>
 
@@ -103,8 +159,41 @@
 
     <!-- Js Lib Files -->
     <script src="./assets/libs/jquery/jquery.min.js"></script>
+    <script src="https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/owl.carousel.js"></script>
 
     <!-- Js Main Files -->
+    <script>
+        $(document).ready(function() {
+            $('.owl-carousel').owlCarousel({
+                items: 4,
+                loop: false,
+                center: true,
+                margin: 10,
+                callbacks: true,
+                URLhashListener: true,
+                autoplayHoverPause: true,
+                startPosition: 'URLHash',
+                responsive : {
+                // breakpoint from 0 up
+                0 : {
+                    items : 1,
+                },
+                // breakpoint from 480 up
+                480 : {
+                    items : 1,
+                },
+                // breakpoint from 768 up
+                768 : {
+                    items : 2,
+                },
+                // breakpoint from 768 up
+                1200 : {
+                    items : 3,
+                }
+            }
+            });
+        })
+    </script>
     <script>
 
         $(document).ready(function() {
